@@ -1,0 +1,601 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1663495981768,5070,Get Books,200,OK,Endurance_test 1-1,text,true,,909819,192,3,3,https://project-three-application-type.azurewebsites.net/api/Books,1946,0,1661
+1663495986839,402,Get Book by ID,200,OK,Endurance_test 1-1,text,true,,5276,194,3,3,https://project-three-application-type.azurewebsites.net/api/Books/7,399,0,0
+1663495987241,507,Post Books,200,OK,Endurance_test 1-1,text,true,,403,363,4,4,https://project-three-application-type.azurewebsites.net/api/Books,507,0,0
+1663495987749,372,Delete book,200,OK,Endurance_test 1-1,,true,,211,216,4,4,https://project-three-application-type.azurewebsites.net/api/Books/7,372,0,0
+1663495983779,4401,Get Books,200,OK,Endurance_test 1-2,text,true,,909234,192,4,4,https://project-three-application-type.azurewebsites.net/api/Books,1133,0,820
+1663495988122,240,Put books,200,OK,Endurance_test 1-1,text,true,,403,362,4,4,https://project-three-application-type.azurewebsites.net/api/Books/7,240,0,0
+1663495988181,318,Get Book by ID,200,OK,Endurance_test 1-2,text,true,,6079,194,4,4,https://project-three-application-type.azurewebsites.net/api/Books/4,311,0,0
+1663495988363,427,Get Users,200,OK,Endurance_test 1-1,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,427,0,0
+1663495988499,300,Post Books,200,OK,Endurance_test 1-2,text,true,,403,363,4,4,https://project-three-application-type.azurewebsites.net/api/Books,300,0,0
+1663495988790,345,Post Users,200,OK,Endurance_test 1-1,text,true,,403,277,4,4,https://project-three-application-type.azurewebsites.net/api/Users,345,0,0
+1663495988799,338,Delete book,200,OK,Endurance_test 1-2,,true,,211,216,4,4,https://project-three-application-type.azurewebsites.net/api/Books/4,338,0,0
+1663495989138,261,Put books,200,OK,Endurance_test 1-2,text,true,,403,362,4,4,https://project-three-application-type.azurewebsites.net/api/Books/4,261,0,0
+1663495989399,301,Get Users,200,OK,Endurance_test 1-2,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,301,0,0
+1663495989140,560,Delete User,200,OK,Endurance_test 1-1,,true,,211,216,4,4,http://project-three-application-type.azurewebsites.net/api/Users/7,560,0,257
+1663495989701,437,Get User by Id,200,OK,Endurance_test 1-1,text,true,,462,194,5,5,https://project-three-application-type.azurewebsites.net/api/Users/7,437,0,0
+1663495989701,469,Post Users,200,OK,Endurance_test 1-2,text,true,,403,278,5,5,https://project-three-application-type.azurewebsites.net/api/Users,469,0,0
+1663495990138,367,Put Users,200,OK,Endurance_test 1-1,text,true,,403,278,5,5,https://project-three-application-type.azurewebsites.net/api/Users/7,367,0,0
+1663495990171,665,Delete User,200,OK,Endurance_test 1-2,,true,,211,216,4,4,http://project-three-application-type.azurewebsites.net/api/Users/4,665,0,333
+1663495990837,596,Get User by Id,200,OK,Endurance_test 1-2,text,true,,462,194,4,4,https://project-three-application-type.azurewebsites.net/api/Users/4,596,0,0
+1663495991434,453,Put Users,200,OK,Endurance_test 1-2,text,true,,403,279,5,5,https://project-three-application-type.azurewebsites.net/api/Users/4,453,0,0
+1663495985778,6350,Get Books,200,OK,Endurance_test 1-3,text,true,,926325,192,4,4,https://project-three-application-type.azurewebsites.net/api/Books,1942,0,1340
+1663495987748,4960,Get Books,200,OK,Endurance_test 1-4,text,true,,924350,192,4,4,https://project-three-application-type.azurewebsites.net/api/Books,1392,0,1042
+1663495992128,646,Get Book by ID,200,OK,Endurance_test 1-3,text,true,,4937,195,4,4,https://project-three-application-type.azurewebsites.net/api/Books/10,646,0,0
+1663495992709,437,Get Book by ID,200,OK,Endurance_test 1-4,text,true,,4068,194,4,4,https://project-three-application-type.azurewebsites.net/api/Books/7,437,0,0
+1663495992775,372,Post Books,200,OK,Endurance_test 1-3,text,true,,403,363,4,4,https://project-three-application-type.azurewebsites.net/api/Books,372,0,0
+1663495993147,396,Post Books,200,OK,Endurance_test 1-4,text,true,,403,363,4,4,https://project-three-application-type.azurewebsites.net/api/Books,396,0,0
+1663495993147,396,Delete book,200,OK,Endurance_test 1-3,,true,,211,217,4,4,https://project-three-application-type.azurewebsites.net/api/Books/10,396,0,0
+1663495993544,606,Delete book,200,OK,Endurance_test 1-4,,true,,211,216,5,5,https://project-three-application-type.azurewebsites.net/api/Books/7,606,0,0
+1663495993544,606,Put books,200,OK,Endurance_test 1-3,text,true,,403,363,5,5,https://project-three-application-type.azurewebsites.net/api/Books/10,606,0,0
+1663495994151,221,Put books,200,OK,Endurance_test 1-4,text,true,,403,362,5,5,https://project-three-application-type.azurewebsites.net/api/Books/7,221,0,0
+1663495994151,239,Get Users,200,OK,Endurance_test 1-3,text,true,,1212,192,5,5,https://project-three-application-type.azurewebsites.net/api/Users,239,0,0
+1663495994372,337,Get Users,200,OK,Endurance_test 1-4,text,true,,1212,192,5,5,https://project-three-application-type.azurewebsites.net/api/Users,337,0,0
+1663495994390,342,Post Users,200,OK,Endurance_test 1-3,text,true,,403,278,5,5,https://project-three-application-type.azurewebsites.net/api/Users,342,0,0
+1663495994710,241,Post Users,200,OK,Endurance_test 1-4,text,true,,403,279,5,5,https://project-three-application-type.azurewebsites.net/api/Users,241,0,0
+1663495994733,876,Delete User,200,OK,Endurance_test 1-3,,true,,211,217,5,5,http://project-three-application-type.azurewebsites.net/api/Users/10,876,0,296
+1663495994952,1074,Delete User,200,OK,Endurance_test 1-4,,true,,211,216,6,6,http://project-three-application-type.azurewebsites.net/api/Users/7,1074,0,450
+1663495995610,515,Get User by Id,200,OK,Endurance_test 1-3,text,true,,465,195,6,6,https://project-three-application-type.azurewebsites.net/api/Users/10,515,0,0
+1663495996027,316,Get User by Id,200,OK,Endurance_test 1-4,text,true,,462,194,6,6,https://project-three-application-type.azurewebsites.net/api/Users/7,315,0,0
+1663495996126,267,Put Users,200,OK,Endurance_test 1-3,text,true,,403,280,6,6,https://project-three-application-type.azurewebsites.net/api/Users/10,267,0,0
+1663495996343,348,Put Users,200,OK,Endurance_test 1-4,text,true,,403,280,5,5,https://project-three-application-type.azurewebsites.net/api/Users/7,348,0,0
+1663495989730,31792,Get Books,200,OK,Endurance_test 1-5,text,true,,936451,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,2037,0,1447
+1663496021523,5610,Get Book by ID,200,OK,Endurance_test 1-5,text,true,,5658,194,19,19,https://project-three-application-type.azurewebsites.net/api/Books/4,4744,0,0
+1663495991730,35583,Get Books,200,OK,Endurance_test 1-6,text,true,,924602,192,19,19,https://project-three-application-type.azurewebsites.net/api/Books,1655,0,1195
+1663496027134,646,Post Books,200,OK,Endurance_test 1-5,text,true,,403,364,20,20,https://project-three-application-type.azurewebsites.net/api/Books,646,0,0
+1663496027313,865,Get Book by ID,200,OK,Endurance_test 1-6,text,true,,4918,195,20,20,https://project-three-application-type.azurewebsites.net/api/Books/10,860,0,0
+1663496027781,1180,Delete book,200,OK,Endurance_test 1-5,,true,,211,216,20,20,https://project-three-application-type.azurewebsites.net/api/Books/4,1180,0,0
+1663496028179,1149,Post Books,200,OK,Endurance_test 1-6,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,1149,0,0
+1663496029329,1122,Delete book,200,OK,Endurance_test 1-6,,true,,211,217,21,21,https://project-three-application-type.azurewebsites.net/api/Books/10,1122,0,0
+1663496030451,2192,Put books,200,OK,Endurance_test 1-6,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books/10,2192,0,0
+1663496028962,4118,Put books,200,OK,Endurance_test 1-5,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,4118,0,0
+1663496032644,745,Get Users,200,OK,Endurance_test 1-6,text,true,,1212,192,22,22,https://project-three-application-type.azurewebsites.net/api/Users,745,0,0
+1663496033081,829,Get Users,200,OK,Endurance_test 1-5,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,829,0,0
+1663496033390,867,Post Users,200,OK,Endurance_test 1-6,text,true,,403,277,23,23,https://project-three-application-type.azurewebsites.net/api/Users,867,0,0
+1663496034260,2025,Delete User,200,OK,Endurance_test 1-6,,true,,211,217,24,24,http://project-three-application-type.azurewebsites.net/api/Users/10,2025,0,896
+1663496033910,2647,Post Users,200,OK,Endurance_test 1-5,text,true,,403,280,24,24,https://project-three-application-type.azurewebsites.net/api/Users,2647,0,0
+1663496036286,1022,Get User by Id,200,OK,Endurance_test 1-6,text,true,,465,195,24,24,https://project-three-application-type.azurewebsites.net/api/Users/10,1022,0,0
+1663496037308,1189,Put Users,200,OK,Endurance_test 1-6,text,true,,403,279,25,25,https://project-three-application-type.azurewebsites.net/api/Users/10,1188,0,0
+1663496036559,2276,Delete User,200,OK,Endurance_test 1-5,,true,,211,216,24,24,http://project-three-application-type.azurewebsites.net/api/Users/4,2276,0,1154
+1663496038836,891,Get User by Id,200,OK,Endurance_test 1-5,text,true,,462,194,25,25,https://project-three-application-type.azurewebsites.net/api/Users/4,891,0,0
+1663496039728,931,Put Users,200,OK,Endurance_test 1-5,text,true,,403,281,25,25,https://project-three-application-type.azurewebsites.net/api/Users/4,931,0,0
+1663495993731,56941,Get Books,200,OK,Endurance_test 1-7,text,true,,916982,192,24,24,https://project-three-application-type.azurewebsites.net/api/Books,1330,0,1001
+1663496050672,2173,Get Book by ID,200,OK,Endurance_test 1-7,text,true,,5916,194,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,2173,0,0
+1663496052846,2866,Post Books,200,OK,Endurance_test 1-7,text,true,,403,363,24,24,https://project-three-application-type.azurewebsites.net/api/Books,2866,0,0
+1663495999731,57058,Get Books,200,OK,Endurance_test 1-10,text,true,,919040,192,24,24,https://project-three-application-type.azurewebsites.net/api/Books,2528,0,2159
+1663496056789,819,Get Book by ID,200,OK,Endurance_test 1-10,text,true,,4417,194,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,818,0,0
+1663496057608,984,Post Books,200,OK,Endurance_test 1-10,text,true,,403,364,24,24,https://project-three-application-type.azurewebsites.net/api/Books,984,0,0
+1663496058593,993,Delete book,200,OK,Endurance_test 1-10,,true,,211,216,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,993,0,0
+1663496055713,4075,Delete book,200,OK,Endurance_test 1-7,,true,,211,216,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,4075,0,3290
+1663496059586,933,Put books,200,OK,Endurance_test 1-10,text,true,,403,363,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,933,0,0
+1663496059789,1133,Put books,200,OK,Endurance_test 1-7,text,true,,403,362,24,24,https://project-three-application-type.azurewebsites.net/api/Books/7,1133,0,0
+1663496060922,867,Get Users,200,OK,Endurance_test 1-7,text,true,,1212,192,24,24,https://project-three-application-type.azurewebsites.net/api/Users,867,0,0
+1663496061790,2308,Post Users,200,OK,Endurance_test 1-7,text,true,,403,278,24,24,https://project-three-application-type.azurewebsites.net/api/Users,2308,0,0
+1663496060520,4590,Get Users,200,OK,Endurance_test 1-10,text,true,,1212,192,24,24,https://project-three-application-type.azurewebsites.net/api/Users,4589,0,3367
+1663496065110,509,Post Users,200,OK,Endurance_test 1-10,text,true,,403,280,24,24,https://project-three-application-type.azurewebsites.net/api/Users,509,0,0
+1663496064099,1612,Delete User,200,OK,Endurance_test 1-7,,true,,211,216,24,24,http://project-three-application-type.azurewebsites.net/api/Users/7,1612,0,1217
+1663496065712,955,Get User by Id,200,OK,Endurance_test 1-7,text,true,,462,194,24,24,https://project-three-application-type.azurewebsites.net/api/Users/7,955,0,0
+1663496065621,1604,Delete User,200,OK,Endurance_test 1-10,,true,,211,216,24,24,http://project-three-application-type.azurewebsites.net/api/Users/7,1604,0,888
+1663496066668,1177,Put Users,200,OK,Endurance_test 1-7,text,true,,403,279,24,24,https://project-three-application-type.azurewebsites.net/api/Users/7,1176,0,0
+1663496067226,1173,Get User by Id,200,OK,Endurance_test 1-10,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/7,1173,0,0
+1663496068400,817,Put Users,200,OK,Endurance_test 1-10,text,true,,403,281,23,23,https://project-three-application-type.azurewebsites.net/api/Users/7,817,0,0
+1663495997730,73464,Get Books,200,OK,Endurance_test 1-9,text,true,,944826,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,2316,0,1570
+1663495995732,77766,Get Books,200,OK,Endurance_test 1-8,text,true,,925212,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,1817,0,1081
+1663496003743,70504,Get Books,200,OK,Endurance_test 1-12,text,true,,929508,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,3299,0,2100
+1663496073499,1244,Get Book by ID,200,OK,Endurance_test 1-8,text,true,,5149,194,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,1243,0,772
+1663496074743,1168,Post Books,200,OK,Endurance_test 1-8,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,1168,0,0
+1663496075912,1215,Delete book,200,OK,Endurance_test 1-8,,true,,211,216,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,1215,0,0
+1663496007712,70033,Get Books,200,OK,Endurance_test 1-14,text,true,,910622,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,3797,0,2820
+1663496074250,3586,Get Book by ID,200,OK,Endurance_test 1-12,text,true,,5269,195,22,22,https://project-three-application-type.azurewebsites.net/api/Books/10,3576,0,2618
+1663496077128,899,Put books,200,OK,Endurance_test 1-8,text,true,,403,362,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,899,0,0
+1663496077838,790,Post Books,200,OK,Endurance_test 1-12,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,790,0,0
+1663496078028,728,Get Users,200,OK,Endurance_test 1-8,text,true,,1212,192,22,22,https://project-three-application-type.azurewebsites.net/api/Users,728,0,0
+1663496078629,619,Delete book,200,OK,Endurance_test 1-12,,true,,211,217,22,22,https://project-three-application-type.azurewebsites.net/api/Books/10,619,0,0
+1663496078756,609,Post Users,200,OK,Endurance_test 1-8,text,true,,403,278,22,22,https://project-three-application-type.azurewebsites.net/api/Users,609,0,0
+1663496079249,222,Put books,200,OK,Endurance_test 1-12,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books/10,222,0,0
+1663496077746,1765,Get Book by ID,200,OK,Endurance_test 1-14,text,true,,4924,194,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,1764,0,1479
+1663496079472,484,Get Users,200,OK,Endurance_test 1-12,text,true,,1212,192,22,22,https://project-three-application-type.azurewebsites.net/api/Users,484,0,0
+1663496079512,453,Post Books,200,OK,Endurance_test 1-14,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,453,0,0
+1663496079366,1081,Delete User,200,OK,Endurance_test 1-8,,true,,211,216,22,22,http://project-three-application-type.azurewebsites.net/api/Users/4,1081,0,282
+1663496071195,9995,Get Book by ID,200,OK,Endurance_test 1-9,text,true,,6166,195,22,22,https://project-three-application-type.azurewebsites.net/api/Books/10,8776,0,8269
+1663496079957,1245,Post Users,200,OK,Endurance_test 1-12,text,true,,403,278,22,22,https://project-three-application-type.azurewebsites.net/api/Users,1245,0,0
+1663496080447,907,Get User by Id,200,OK,Endurance_test 1-8,text,true,,462,194,22,22,https://project-three-application-type.azurewebsites.net/api/Users/4,907,0,0
+1663496001735,79719,Get Books,200,OK,Endurance_test 1-11,text,true,,928253,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,1629,0,1006
+1663496079966,2006,Delete book,200,OK,Endurance_test 1-14,,true,,211,216,22,22,https://project-three-application-type.azurewebsites.net/api/Books/4,2006,0,0
+1663496081191,841,Post Books,200,OK,Endurance_test 1-9,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,841,0,0
+1663496081354,1018,Put Users,200,OK,Endurance_test 1-8,text,true,,403,279,22,22,https://project-three-application-type.azurewebsites.net/api/Users/4,1018,0,0
+1663496081973,865,Put books,200,OK,Endurance_test 1-14,text,true,,403,362,21,21,https://project-three-application-type.azurewebsites.net/api/Books/4,865,0,0
+1663496015729,67178,Get Books,200,OK,Endurance_test 1-18,text,true,,913275,192,21,21,https://project-three-application-type.azurewebsites.net/api/Books,3760,0,2896
+1663496081203,1706,Delete User,200,OK,Endurance_test 1-12,,true,,211,217,21,21,http://project-three-application-type.azurewebsites.net/api/Users/10,1706,0,832
+1663496082033,876,Delete book,200,OK,Endurance_test 1-9,,true,,211,217,21,21,https://project-three-application-type.azurewebsites.net/api/Books/10,876,0,0
+1663496082838,745,Get Users,200,OK,Endurance_test 1-14,text,true,,1212,192,21,21,https://project-three-application-type.azurewebsites.net/api/Users,745,0,0
+1663496082910,989,Get User by Id,200,OK,Endurance_test 1-12,text,true,,465,195,21,21,https://project-three-application-type.azurewebsites.net/api/Users/10,989,0,0
+1663496082910,989,Put books,200,OK,Endurance_test 1-9,text,true,,403,363,21,21,https://project-three-application-type.azurewebsites.net/api/Books/10,989,0,0
+1663496027727,56401,Get Books,200,OK,Endurance_test 1-24,text,true,,909240,192,21,21,https://project-three-application-type.azurewebsites.net/api/Books,7008,0,6205
+1663496083584,559,Post Users,200,OK,Endurance_test 1-14,text,true,,403,279,21,21,https://project-three-application-type.azurewebsites.net/api/Users,559,0,0
+1663496083900,420,Get Users,200,OK,Endurance_test 1-9,text,true,,1212,192,21,21,https://project-three-application-type.azurewebsites.net/api/Users,420,0,0
+1663496083900,422,Put Users,200,OK,Endurance_test 1-12,text,true,,403,280,21,21,https://project-three-application-type.azurewebsites.net/api/Users/10,422,0,0
+1663496081455,3071,Get Book by ID,200,OK,Endurance_test 1-11,text,true,,4861,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/4,3071,0,2509
+1663496009713,75003,Get Books,200,OK,Endurance_test 1-15,text,true,,909248,192,20,20,https://project-three-application-type.azurewebsites.net/api/Books,3777,0,2819
+1663496084129,620,Get Book by ID,200,OK,Endurance_test 1-24,text,true,,4115,195,20,20,https://project-three-application-type.azurewebsites.net/api/Books/10,596,0,0
+1663496084321,472,Post Users,200,OK,Endurance_test 1-9,text,true,,403,279,20,20,https://project-three-application-type.azurewebsites.net/api/Users,472,0,0
+1663496084527,378,Post Books,200,OK,Endurance_test 1-11,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,378,0,0
+1663496084145,1179,Delete User,200,OK,Endurance_test 1-14,,true,,211,216,20,20,http://project-three-application-type.azurewebsites.net/api/Users/4,1179,0,539
+1663496084750,723,Post Books,200,OK,Endurance_test 1-24,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,723,0,0
+1663496082908,2858,Get Book by ID,200,OK,Endurance_test 1-18,text,true,,6530,195,20,20,https://project-three-application-type.azurewebsites.net/api/Books/10,2853,0,1885
+1663496084907,1082,Delete book,200,OK,Endurance_test 1-11,,true,,211,216,20,20,https://project-three-application-type.azurewebsites.net/api/Books/4,1082,0,0
+1663496085325,991,Get User by Id,200,OK,Endurance_test 1-14,text,true,,462,194,20,20,https://project-three-application-type.azurewebsites.net/api/Users/4,991,0,0
+1663496085474,1031,Delete book,200,OK,Endurance_test 1-24,,true,,211,217,20,20,https://project-three-application-type.azurewebsites.net/api/Books/10,1031,0,0
+1663496084796,1907,Delete User,200,OK,Endurance_test 1-9,,true,,211,217,20,20,http://project-three-application-type.azurewebsites.net/api/Users/10,1907,0,810
+1663496085767,1085,Post Books,200,OK,Endurance_test 1-18,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,1085,0,0
+1663496085989,1000,Put books,200,OK,Endurance_test 1-11,text,true,,403,362,20,20,https://project-three-application-type.azurewebsites.net/api/Books/4,1000,0,0
+1663496086317,968,Put Users,200,OK,Endurance_test 1-14,text,true,,403,280,20,20,https://project-three-application-type.azurewebsites.net/api/Users/4,968,0,0
+1663496086505,999,Put books,200,OK,Endurance_test 1-24,text,true,,403,363,19,19,https://project-three-application-type.azurewebsites.net/api/Books/10,999,0,0
+1663496086703,841,Get User by Id,200,OK,Endurance_test 1-9,text,true,,465,195,19,19,https://project-three-application-type.azurewebsites.net/api/Users/10,841,0,0
+1663496017733,70175,Get Books,200,OK,Endurance_test 1-19,text,true,,921112,192,19,19,https://project-three-application-type.azurewebsites.net/api/Books,3813,0,2792
+1663496086989,962,Get Users,200,OK,Endurance_test 1-11,text,true,,1212,192,19,19,https://project-three-application-type.azurewebsites.net/api/Users,962,0,0
+1663496011718,76517,Get Books,200,OK,Endurance_test 1-16,text,true,,914673,192,19,19,https://project-three-application-type.azurewebsites.net/api/Books,4211,0,2992
+1663496087504,786,Get Users,200,OK,Endurance_test 1-24,text,true,,1212,192,19,19,https://project-three-application-type.azurewebsites.net/api/Users,785,0,0
+1663496087544,763,Put Users,200,OK,Endurance_test 1-9,text,true,,403,281,19,19,https://project-three-application-type.azurewebsites.net/api/Users/10,763,0,0
+1663496087952,504,Post Users,200,OK,Endurance_test 1-11,text,true,,403,277,18,18,https://project-three-application-type.azurewebsites.net/api/Users,504,0,0
+1663496086853,1947,Delete book,200,OK,Endurance_test 1-18,,true,,211,217,18,18,https://project-three-application-type.azurewebsites.net/api/Books/10,1947,0,0
+1663496005713,83333,Get Books,200,OK,Endurance_test 1-13,text,true,,927268,192,18,18,https://project-three-application-type.azurewebsites.net/api/Books,4096,0,3167
+1663496088801,598,Put books,200,OK,Endurance_test 1-18,text,true,,403,363,18,18,https://project-three-application-type.azurewebsites.net/api/Books/10,598,0,0
+1663496088457,1289,Delete User,200,OK,Endurance_test 1-11,,true,,211,216,18,18,http://project-three-application-type.azurewebsites.net/api/Users/4,1289,0,486
+1663496019732,70388,Get Books,200,OK,Endurance_test 1-20,text,true,,916543,192,18,18,https://project-three-application-type.azurewebsites.net/api/Books,5254,0,4277
+1663496089399,736,Get Users,200,OK,Endurance_test 1-18,text,true,,1212,192,18,18,https://project-three-application-type.azurewebsites.net/api/Users,736,0,0
+1663496089746,523,Get User by Id,200,OK,Endurance_test 1-11,text,true,,462,194,18,18,https://project-three-application-type.azurewebsites.net/api/Users/4,523,0,0
+1663496090136,941,Post Users,200,OK,Endurance_test 1-18,text,true,,403,278,18,18,https://project-three-application-type.azurewebsites.net/api/Users,941,0,0
+1663496088290,2916,Post Users,200,OK,Endurance_test 1-24,text,true,,403,279,18,18,https://project-three-application-type.azurewebsites.net/api/Users,2916,0,1940
+1663496090269,956,Put Users,200,OK,Endurance_test 1-11,text,true,,403,278,18,18,https://project-three-application-type.azurewebsites.net/api/Users/4,956,0,0
+1663496087909,3318,Get Book by ID,200,OK,Endurance_test 1-19,text,true,,5413,194,18,18,https://project-three-application-type.azurewebsites.net/api/Books/7,3317,0,2321
+1663496091227,523,Post Books,200,OK,Endurance_test 1-19,text,true,,403,363,17,17,https://project-three-application-type.azurewebsites.net/api/Books,523,0,0
+1663496089048,2926,Get Book by ID,200,OK,Endurance_test 1-13,text,true,,5750,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,2916,0,2293
+1663496091079,1668,Delete User,200,OK,Endurance_test 1-18,,true,,211,217,17,17,http://project-three-application-type.azurewebsites.net/api/Users/10,1668,0,557
+1663496084717,8328,Get Book by ID,200,OK,Endurance_test 1-15,text,true,,4070,195,17,17,https://project-three-application-type.azurewebsites.net/api/Books/10,8324,0,7007
+1663496091975,1263,Post Books,200,OK,Endurance_test 1-13,text,true,,403,363,17,17,https://project-three-application-type.azurewebsites.net/api/Books,1263,0,0
+1663496088236,5283,Get Book by ID,200,OK,Endurance_test 1-16,text,true,,5405,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,5283,0,4193
+1663496091208,2744,Delete User,200,OK,Endurance_test 1-24,,true,,211,217,17,17,http://project-three-application-type.azurewebsites.net/api/Users/10,2744,0,516
+1663496091751,2213,Delete book,200,OK,Endurance_test 1-19,,true,,211,216,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,2213,0,0
+1663496092748,1216,Get User by Id,200,OK,Endurance_test 1-18,text,true,,465,195,17,17,https://project-three-application-type.azurewebsites.net/api/Users/10,1216,0,0
+1663496090120,3902,Get Book by ID,200,OK,Endurance_test 1-20,text,true,,4965,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/4,3902,0,2628
+1663496093061,1029,Post Books,200,OK,Endurance_test 1-15,text,true,,403,364,17,17,https://project-three-application-type.azurewebsites.net/api/Books,1029,0,0
+1663496093238,972,Delete book,200,OK,Endurance_test 1-13,,true,,211,216,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,972,0,0
+1663496093520,878,Post Books,200,OK,Endurance_test 1-16,text,true,,403,363,17,17,https://project-three-application-type.azurewebsites.net/api/Books,878,0,0
+1663496093952,524,Get User by Id,200,OK,Endurance_test 1-24,text,true,,465,195,17,17,https://project-three-application-type.azurewebsites.net/api/Users/10,524,0,0
+1663496093965,512,Put Users,200,OK,Endurance_test 1-18,text,true,,403,280,17,17,https://project-three-application-type.azurewebsites.net/api/Users/10,512,0,0
+1663496093965,513,Put books,200,OK,Endurance_test 1-19,text,true,,403,362,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,513,0,0
+1663496094022,461,Post Books,200,OK,Endurance_test 1-20,text,true,,403,364,16,16,https://project-three-application-type.azurewebsites.net/api/Books,461,0,0
+1663496094090,583,Delete book,200,OK,Endurance_test 1-15,,true,,211,217,16,16,https://project-three-application-type.azurewebsites.net/api/Books/10,583,0,0
+1663496094210,466,Put books,200,OK,Endurance_test 1-13,text,true,,403,362,16,16,https://project-three-application-type.azurewebsites.net/api/Books/7,466,0,0
+1663496094398,321,Delete book,200,OK,Endurance_test 1-16,,true,,211,216,16,16,https://project-three-application-type.azurewebsites.net/api/Books/7,321,0,0
+1663496094477,285,Put Users,200,OK,Endurance_test 1-24,text,true,,403,281,16,16,https://project-three-application-type.azurewebsites.net/api/Users/10,285,0,0
+1663496094484,297,Delete book,200,OK,Endurance_test 1-20,,true,,211,216,15,15,https://project-three-application-type.azurewebsites.net/api/Books/4,297,0,0
+1663496094478,305,Get Users,200,OK,Endurance_test 1-19,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,305,0,0
+1663496094676,241,Get Users,200,OK,Endurance_test 1-13,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,241,0,0
+1663496094674,243,Put books,200,OK,Endurance_test 1-15,text,true,,403,364,15,15,https://project-three-application-type.azurewebsites.net/api/Books/10,243,0,0
+1663496094720,353,Put books,200,OK,Endurance_test 1-16,text,true,,403,362,15,15,https://project-three-application-type.azurewebsites.net/api/Books/7,353,0,0
+1663496094783,525,Post Users,200,OK,Endurance_test 1-19,text,true,,403,279,15,15,https://project-three-application-type.azurewebsites.net/api/Users,525,0,0
+1663496094782,526,Put books,200,OK,Endurance_test 1-20,text,true,,403,363,15,15,https://project-three-application-type.azurewebsites.net/api/Books/4,526,0,0
+1663496094918,551,Post Users,200,OK,Endurance_test 1-13,text,true,,403,278,15,15,https://project-three-application-type.azurewebsites.net/api/Users,550,0,0
+1663496094918,553,Get Users,200,OK,Endurance_test 1-15,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,553,0,0
+1663496095077,577,Get Users,200,OK,Endurance_test 1-16,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,577,0,0
+1663496095309,479,Get Users,200,OK,Endurance_test 1-20,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,479,0,0
+1663496095472,521,Post Users,200,OK,Endurance_test 1-15,text,true,,403,280,15,15,https://project-three-application-type.azurewebsites.net/api/Users,521,0,0
+1663496095654,696,Post Users,200,OK,Endurance_test 1-16,text,true,,403,277,15,15,https://project-three-application-type.azurewebsites.net/api/Users,696,0,0
+1663496025735,70654,Get Books,200,OK,Endurance_test 1-23,text,true,,926572,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,3916,0,2674
+1663496021730,74676,Get Books,200,OK,Endurance_test 1-21,text,true,,917391,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,4468,0,3239
+1663496095310,1130,Delete User,200,OK,Endurance_test 1-19,,true,,211,216,15,15,http://project-three-application-type.azurewebsites.net/api/Users/7,1130,0,477
+1663496095788,657,Post Users,200,OK,Endurance_test 1-20,text,true,,403,280,15,15,https://project-three-application-type.azurewebsites.net/api/Users,656,0,0
+1663496095471,1359,Delete User,200,OK,Endurance_test 1-13,,true,,211,216,15,15,http://project-three-application-type.azurewebsites.net/api/Users/7,1359,0,522
+1663496096441,843,Get User by Id,200,OK,Endurance_test 1-19,text,true,,462,194,15,15,https://project-three-application-type.azurewebsites.net/api/Users/7,843,0,0
+1663496096830,798,Get User by Id,200,OK,Endurance_test 1-13,text,true,,462,194,15,15,https://project-three-application-type.azurewebsites.net/api/Users/7,798,0,0
+1663496095994,1634,Delete User,200,OK,Endurance_test 1-15,,true,,211,217,15,15,http://project-three-application-type.azurewebsites.net/api/Users/10,1634,0,836
+1663496096351,1606,Delete User,200,OK,Endurance_test 1-16,,true,,211,216,15,15,http://project-three-application-type.azurewebsites.net/api/Users/7,1606,0,815
+1663496096446,1524,Delete User,200,OK,Endurance_test 1-20,,true,,211,216,15,15,http://project-three-application-type.azurewebsites.net/api/Users/4,1524,0,816
+1663496097284,691,Put Users,200,OK,Endurance_test 1-19,text,true,,403,280,15,15,https://project-three-application-type.azurewebsites.net/api/Users/7,691,0,0
+1663496097657,431,Get User by Id,200,OK,Endurance_test 1-15,text,true,,465,195,14,14,https://project-three-application-type.azurewebsites.net/api/Users/10,431,0,0
+1663496097657,431,Put Users,200,OK,Endurance_test 1-13,text,true,,403,279,14,14,https://project-three-application-type.azurewebsites.net/api/Users/7,431,0,0
+1663496097958,417,Get User by Id,200,OK,Endurance_test 1-16,text,true,,462,194,13,13,https://project-three-application-type.azurewebsites.net/api/Users/7,417,0,0
+1663496097971,411,Get User by Id,200,OK,Endurance_test 1-20,text,true,,462,194,13,13,https://project-three-application-type.azurewebsites.net/api/Users/4,411,0,0
+1663496098088,594,Put Users,200,OK,Endurance_test 1-15,text,true,,403,282,13,13,https://project-three-application-type.azurewebsites.net/api/Users/10,594,0,0
+1663496098376,775,Put Users,200,OK,Endurance_test 1-16,text,true,,403,278,12,12,https://project-three-application-type.azurewebsites.net/api/Users/7,774,0,0
+1663496098383,768,Put Users,200,OK,Endurance_test 1-20,text,true,,403,281,12,12,https://project-three-application-type.azurewebsites.net/api/Users/4,768,0,0
+1663496096390,2784,Get Book by ID,200,OK,Endurance_test 1-23,text,true,,5460,194,10,10,https://project-three-application-type.azurewebsites.net/api/Books/4,2780,0,1987
+1663496096407,2775,Get Book by ID,200,OK,Endurance_test 1-21,text,true,,5789,195,10,10,https://project-three-application-type.azurewebsites.net/api/Books/10,2773,0,2006
+1663496099175,855,Post Books,200,OK,Endurance_test 1-23,text,true,,403,363,10,10,https://project-three-application-type.azurewebsites.net/api/Books,854,0,0
+1663496099200,844,Post Books,200,OK,Endurance_test 1-21,text,true,,403,363,10,10,https://project-three-application-type.azurewebsites.net/api/Books,843,0,0
+1663496100030,428,Delete book,200,OK,Endurance_test 1-23,,true,,211,216,10,10,https://project-three-application-type.azurewebsites.net/api/Books/4,428,0,0
+1663496100044,414,Delete book,200,OK,Endurance_test 1-21,,true,,211,217,10,10,https://project-three-application-type.azurewebsites.net/api/Books/10,414,0,0
+1663496033713,67708,Get Books,200,OK,Endurance_test 1-27,text,true,,917422,192,10,10,https://project-three-application-type.azurewebsites.net/api/Books,4816,0,3591
+1663496100459,967,Put books,200,OK,Endurance_test 1-21,text,true,,403,363,10,10,https://project-three-application-type.azurewebsites.net/api/Books/10,967,0,0
+1663496100459,967,Put books,200,OK,Endurance_test 1-23,text,true,,403,362,10,10,https://project-three-application-type.azurewebsites.net/api/Books/4,967,0,0
+1663496101427,799,Get Users,200,OK,Endurance_test 1-21,text,true,,1212,192,10,10,https://project-three-application-type.azurewebsites.net/api/Users,799,0,0
+1663496101427,799,Get Users,200,OK,Endurance_test 1-23,text,true,,1212,192,10,10,https://project-three-application-type.azurewebsites.net/api/Users,799,0,0
+1663496102227,930,Post Users,200,OK,Endurance_test 1-23,text,true,,403,278,10,10,https://project-three-application-type.azurewebsites.net/api/Users,930,0,0
+1663496102227,933,Post Users,200,OK,Endurance_test 1-21,text,true,,403,277,10,10,https://project-three-application-type.azurewebsites.net/api/Users,933,0,0
+1663496023729,79612,Get Books,200,OK,Endurance_test 1-22,text,true,,925444,192,10,10,https://project-three-application-type.azurewebsites.net/api/Books,4668,0,2850
+1663496103158,484,Delete User,200,OK,Endurance_test 1-23,,true,,211,216,10,10,http://project-three-application-type.azurewebsites.net/api/Users/4,484,0,238
+1663496103162,480,Delete User,200,OK,Endurance_test 1-21,,true,,211,217,10,10,http://project-three-application-type.azurewebsites.net/api/Users/10,480,0,235
+1663496101421,2283,Get Book by ID,200,OK,Endurance_test 1-27,text,true,,909,195,10,10,https://project-three-application-type.azurewebsites.net/api/Books/10,2283,0,2029
+1663496103642,225,Get User by Id,200,OK,Endurance_test 1-23,text,true,,462,194,10,10,https://project-three-application-type.azurewebsites.net/api/Users/4,225,0,0
+1663496103642,243,Get User by Id,200,OK,Endurance_test 1-21,text,true,,465,195,10,10,https://project-three-application-type.azurewebsites.net/api/Users/10,243,0,0
+1663496103704,322,Post Books,200,OK,Endurance_test 1-27,text,true,,403,363,10,10,https://project-three-application-type.azurewebsites.net/api/Books,322,0,0
+1663496103886,274,Put Users,200,OK,Endurance_test 1-21,text,true,,403,279,10,10,https://project-three-application-type.azurewebsites.net/api/Users/10,274,0,0
+1663496103868,292,Put Users,200,OK,Endurance_test 1-23,text,true,,403,279,10,10,https://project-three-application-type.azurewebsites.net/api/Users/4,292,0,0
+1663496037715,66497,Get Books,200,OK,Endurance_test 1-29,text,true,,909552,192,8,8,https://project-three-application-type.azurewebsites.net/api/Books,7213,0,5922
+1663496104026,263,Delete book,200,OK,Endurance_test 1-27,,true,,211,217,8,8,https://project-three-application-type.azurewebsites.net/api/Books/10,263,0,0
+1663496031731,72734,Get Books,200,OK,Endurance_test 1-26,text,true,,922969,192,8,8,https://project-three-application-type.azurewebsites.net/api/Books,8177,0,5094
+1663496103342,1177,Get Book by ID,200,OK,Endurance_test 1-22,text,true,,906,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/7,1177,0,815
+1663496104289,432,Put books,200,OK,Endurance_test 1-27,text,true,,403,363,8,8,https://project-three-application-type.azurewebsites.net/api/Books/10,432,0,0
+1663496104519,352,Post Books,200,OK,Endurance_test 1-22,text,true,,403,363,8,8,https://project-three-application-type.azurewebsites.net/api/Books,352,0,0
+1663496104722,369,Get Users,200,OK,Endurance_test 1-27,text,true,,1212,192,8,8,https://project-three-application-type.azurewebsites.net/api/Users,369,0,0
+1663496104871,286,Delete book,200,OK,Endurance_test 1-22,,true,,211,216,8,8,https://project-three-application-type.azurewebsites.net/api/Books/7,286,0,0
+1663496105092,452,Post Users,200,OK,Endurance_test 1-27,text,true,,403,278,8,8,https://project-three-application-type.azurewebsites.net/api/Users,452,0,0
+1663496104213,1739,Get Book by ID,200,OK,Endurance_test 1-29,text,true,,906,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/4,1739,0,954
+1663496105157,795,Put books,200,OK,Endurance_test 1-22,text,true,,403,362,8,8,https://project-three-application-type.azurewebsites.net/api/Books/7,795,0,0
+1663496105953,234,Get Users,200,OK,Endurance_test 1-22,text,true,,1212,192,8,8,https://project-three-application-type.azurewebsites.net/api/Users,234,0,0
+1663496104465,1722,Get Book by ID,200,OK,Endurance_test 1-26,text,true,,905,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/4,1722,0,1479
+1663496105953,234,Post Books,200,OK,Endurance_test 1-29,text,true,,403,363,8,8,https://project-three-application-type.azurewebsites.net/api/Books,234,0,0
+1663496105546,1161,Delete User,200,OK,Endurance_test 1-27,,true,,211,217,8,8,http://project-three-application-type.azurewebsites.net/api/Users/10,1161,0,567
+1663496106188,557,Post Books,200,OK,Endurance_test 1-26,text,true,,403,363,8,8,https://project-three-application-type.azurewebsites.net/api/Books,557,0,0
+1663496106188,557,Delete book,200,OK,Endurance_test 1-29,,true,,211,216,8,8,https://project-three-application-type.azurewebsites.net/api/Books/4,557,0,0
+1663496106188,559,Post Users,200,OK,Endurance_test 1-22,text,true,,403,278,8,8,https://project-three-application-type.azurewebsites.net/api/Users,559,0,0
+1663496106707,217,Get User by Id,200,OK,Endurance_test 1-27,text,true,,465,195,8,8,https://project-three-application-type.azurewebsites.net/api/Users/10,217,0,0
+1663496106746,203,Delete book,200,OK,Endurance_test 1-26,,true,,211,216,8,8,https://project-three-application-type.azurewebsites.net/api/Books/4,203,0,0
+1663496106747,325,Put books,200,OK,Endurance_test 1-29,text,true,,403,362,8,8,https://project-three-application-type.azurewebsites.net/api/Books/4,325,0,0
+1663496035714,71515,Get Books,200,OK,Endurance_test 1-28,text,true,,939654,192,8,8,https://project-three-application-type.azurewebsites.net/api/Books,36314,0,35147
+1663496106924,308,Put Users,200,OK,Endurance_test 1-27,text,true,,403,280,8,8,https://project-three-application-type.azurewebsites.net/api/Users/10,308,0,0
+1663496106949,292,Put books,200,OK,Endurance_test 1-26,text,true,,403,362,7,7,https://project-three-application-type.azurewebsites.net/api/Books/4,292,0,0
+1663496107072,260,Get Users,200,OK,Endurance_test 1-29,text,true,,1212,192,7,7,https://project-three-application-type.azurewebsites.net/api/Users,260,0,0
+1663496106748,584,Delete User,200,OK,Endurance_test 1-22,,true,,211,216,7,7,http://project-three-application-type.azurewebsites.net/api/Users/7,584,0,323
+1663496039713,67659,Get Books,200,OK,Endurance_test 1-30,text,true,,929220,192,7,7,https://project-three-application-type.azurewebsites.net/api/Books,10062,0,7681
+1663496107242,496,Get Users,200,OK,Endurance_test 1-26,text,true,,1212,192,7,7,https://project-three-application-type.azurewebsites.net/api/Users,496,0,0
+1663496107332,478,Post Users,200,OK,Endurance_test 1-29,text,true,,403,279,7,7,https://project-three-application-type.azurewebsites.net/api/Users,478,0,0
+1663496107332,478,Get User by Id,200,OK,Endurance_test 1-22,text,true,,462,194,7,7,https://project-three-application-type.azurewebsites.net/api/Users/7,478,0,0
+1663496013730,94081,Get Books,200,OK,Endurance_test 1-17,text,true,,912622,192,7,7,https://project-three-application-type.azurewebsites.net/api/Books,13624,0,12687
+1663496107739,418,Post Users,200,OK,Endurance_test 1-26,text,true,,403,277,7,7,https://project-three-application-type.azurewebsites.net/api/Users,418,0,0
+1663496107813,385,Put Users,200,OK,Endurance_test 1-22,text,true,,403,279,7,7,https://project-three-application-type.azurewebsites.net/api/Users/7,385,0,0
+1663496107812,1184,Delete User,200,OK,Endurance_test 1-29,,true,,211,216,6,6,http://project-three-application-type.azurewebsites.net/api/Users/4,1184,0,385
+1663496107229,2080,Get Book by ID,200,OK,Endurance_test 1-28,text,true,,906,194,6,6,https://project-three-application-type.azurewebsites.net/api/Books/7,2080,0,1595
+1663496108996,409,Get User by Id,200,OK,Endurance_test 1-29,text,true,,462,194,6,6,https://project-three-application-type.azurewebsites.net/api/Users/4,409,0,0
+1663496108158,1245,Delete User,200,OK,Endurance_test 1-26,,true,,211,216,6,6,http://project-three-application-type.azurewebsites.net/api/Users/4,1245,0,795
+1663496107394,2202,Get Book by ID,200,OK,Endurance_test 1-30,text,true,,909,195,6,6,https://project-three-application-type.azurewebsites.net/api/Books/10,2202,0,1858
+1663496109309,334,Post Books,200,OK,Endurance_test 1-28,text,true,,403,363,6,6,https://project-three-application-type.azurewebsites.net/api/Books,334,0,0
+1663496109417,256,Get User by Id,200,OK,Endurance_test 1-26,text,true,,462,194,6,6,https://project-three-application-type.azurewebsites.net/api/Users/4,256,0,0
+1663496109417,262,Put Users,200,OK,Endurance_test 1-29,text,true,,403,280,6,6,https://project-three-application-type.azurewebsites.net/api/Users/4,262,0,0
+1663496107812,1868,Get Book by ID,200,OK,Endurance_test 1-17,text,true,,906,194,6,6,https://project-three-application-type.azurewebsites.net/api/Books/4,1868,0,1593
+1663496109597,427,Post Books,200,OK,Endurance_test 1-30,text,true,,403,364,5,5,https://project-three-application-type.azurewebsites.net/api/Books,427,0,0
+1663496109644,386,Delete book,200,OK,Endurance_test 1-28,,true,,211,216,5,5,https://project-three-application-type.azurewebsites.net/api/Books/7,386,0,0
+1663496109681,353,Post Books,200,OK,Endurance_test 1-17,text,true,,403,363,5,5,https://project-three-application-type.azurewebsites.net/api/Books,353,0,0
+1663496109674,360,Put Users,200,OK,Endurance_test 1-26,text,true,,403,278,5,5,https://project-three-application-type.azurewebsites.net/api/Users/4,360,0,0
+1663496110025,491,Delete book,200,OK,Endurance_test 1-30,,true,,211,217,4,4,https://project-three-application-type.azurewebsites.net/api/Books/10,491,0,0
+1663496110034,482,Delete book,200,OK,Endurance_test 1-17,,true,,211,216,4,4,https://project-three-application-type.azurewebsites.net/api/Books/4,482,0,0
+1663496110031,485,Put books,200,OK,Endurance_test 1-28,text,true,,403,362,4,4,https://project-three-application-type.azurewebsites.net/api/Books/7,485,0,0
+1663496110516,322,Get Users,200,OK,Endurance_test 1-28,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,322,0,0
+1663496110516,322,Put books,200,OK,Endurance_test 1-30,text,true,,403,364,4,4,https://project-three-application-type.azurewebsites.net/api/Books/10,322,0,0
+1663496110516,326,Put books,200,OK,Endurance_test 1-17,text,true,,403,362,4,4,https://project-three-application-type.azurewebsites.net/api/Books/4,326,0,0
+1663496110839,498,Get Users,200,OK,Endurance_test 1-30,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,498,0,0
+1663496110839,499,Post Users,200,OK,Endurance_test 1-28,text,true,,403,278,4,4,https://project-three-application-type.azurewebsites.net/api/Users,499,0,0
+1663496110843,761,Get Users,200,OK,Endurance_test 1-17,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,761,0,0
+1663496111337,615,Post Users,200,OK,Endurance_test 1-30,text,true,,403,280,4,4,https://project-three-application-type.azurewebsites.net/api/Users,615,0,0
+1663496111605,447,Post Users,200,OK,Endurance_test 1-17,text,true,,403,278,4,4,https://project-three-application-type.azurewebsites.net/api/Users,447,0,0
+1663496111339,911,Delete User,200,OK,Endurance_test 1-28,,true,,211,216,4,4,http://project-three-application-type.azurewebsites.net/api/Users/7,911,0,614
+1663496112251,357,Get User by Id,200,OK,Endurance_test 1-28,text,true,,462,194,4,4,https://project-three-application-type.azurewebsites.net/api/Users/7,357,0,0
+1663496111954,654,Delete User,200,OK,Endurance_test 1-30,,true,,211,217,4,4,http://project-three-application-type.azurewebsites.net/api/Users/10,654,0,296
+1663496112053,570,Delete User,200,OK,Endurance_test 1-17,,true,,211,216,4,4,http://project-three-application-type.azurewebsites.net/api/Users/4,570,0,295
+1663496029714,83080,Get Books,200,OK,Endurance_test 1-25,text,true,,923980,192,4,4,https://project-three-application-type.azurewebsites.net/api/Books,12600,0,10073
+1663496112609,219,Get User by Id,200,OK,Endurance_test 1-30,text,true,,465,195,4,4,https://project-three-application-type.azurewebsites.net/api/Users/10,219,0,0
+1663496112609,222,Put Users,200,OK,Endurance_test 1-28,text,true,,403,279,4,4,https://project-three-application-type.azurewebsites.net/api/Users/7,222,0,0
+1663496112624,227,Get User by Id,200,OK,Endurance_test 1-17,text,true,,462,194,3,3,https://project-three-application-type.azurewebsites.net/api/Users/4,227,0,0
+1663496112828,207,Put Users,200,OK,Endurance_test 1-30,text,true,,403,282,3,3,https://project-three-application-type.azurewebsites.net/api/Users/10,207,0,0
+1663496112851,211,Put Users,200,OK,Endurance_test 1-17,text,true,,403,279,2,2,https://project-three-application-type.azurewebsites.net/api/Users/4,211,0,0
+1663496112795,886,Get Book by ID,200,OK,Endurance_test 1-25,text,true,,906,194,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,886,0,670
+1663496113681,238,Post Books,200,OK,Endurance_test 1-25,text,true,,403,364,1,1,https://project-three-application-type.azurewebsites.net/api/Books,238,0,0
+1663496113920,216,Delete book,200,OK,Endurance_test 1-25,,true,,211,216,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,216,0,0
+1663496114136,214,Put books,200,OK,Endurance_test 1-25,text,true,,403,363,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,214,0,0
+1663496114351,209,Get Users,200,OK,Endurance_test 1-25,text,true,,1212,192,1,1,https://project-three-application-type.azurewebsites.net/api/Users,209,0,0
+1663496114561,217,Post Users,200,OK,Endurance_test 1-25,text,true,,403,280,1,1,https://project-three-application-type.azurewebsites.net/api/Users,217,0,0
+1663496114780,446,Delete User,200,OK,Endurance_test 1-25,,true,,211,216,1,1,http://project-three-application-type.azurewebsites.net/api/Users/7,446,0,203
+1663496115226,216,Get User by Id,200,OK,Endurance_test 1-25,text,true,,462,194,1,1,https://project-three-application-type.azurewebsites.net/api/Users/7,216,0,0
+1663496115442,230,Put Users,200,OK,Endurance_test 1-25,text,true,,403,281,1,1,https://project-three-application-type.azurewebsites.net/api/Users/7,229,0,0
+1663498683465,1802,Get Users,200,OK,Stress_test 1-1,text,true,,1212,192,1,1,https://project-three-application-type.azurewebsites.net/api/Users,1802,0,1495
+1663498685267,307,Post Users,200,OK,Stress_test 1-1,text,true,,403,277,2,2,https://project-three-application-type.azurewebsites.net/api/Users,307,0,0
+1663498685574,307,Delete Users,200,OK,Stress_test 1-1,,true,,211,216,2,2,https://project-three-application-type.azurewebsites.net/api/Users/7,307,0,0
+1663498685882,306,Get Users by Id,200,OK,Stress_test 1-1,text,true,,462,194,2,2,https://project-three-application-type.azurewebsites.net/api/Users/7,306,0,0
+1663498686189,307,Put User,200,OK,Stress_test 1-1,text,true,,403,278,2,2,https://project-three-application-type.azurewebsites.net/api/Users/7,307,0,0
+1663498685458,1345,Get Users,200,OK,Stress_test 1-2,text,true,,1212,192,2,2,https://project-three-application-type.azurewebsites.net/api/Users,1345,0,1039
+1663498686804,284,Post Users,200,OK,Stress_test 1-2,text,true,,403,278,2,2,https://project-three-application-type.azurewebsites.net/api/Users,284,0,0
+1663498687089,313,Delete Users,200,OK,Stress_test 1-2,,true,,211,216,2,2,https://project-three-application-type.azurewebsites.net/api/Users/3,313,0,0
+1663498687402,346,Get Users by Id,200,OK,Stress_test 1-2,text,true,,462,194,3,3,https://project-three-application-type.azurewebsites.net/api/Users/3,346,0,0
+1663498687749,540,Put User,200,OK,Stress_test 1-2,text,true,,403,279,3,3,https://project-three-application-type.azurewebsites.net/api/Users/3,540,0,0
+1663498687501,1724,Get Users,200,OK,Stress_test 1-3,text,true,,1212,192,3,3,https://project-three-application-type.azurewebsites.net/api/Users,1724,0,1275
+1663498689225,969,Post Users,200,OK,Stress_test 1-3,text,true,,403,278,4,4,https://project-three-application-type.azurewebsites.net/api/Users,969,0,0
+1663498690195,403,Delete Users,200,OK,Stress_test 1-3,,true,,211,216,4,4,https://project-three-application-type.azurewebsites.net/api/Users/9,403,0,0
+1663498690598,303,Get Users by Id,200,OK,Stress_test 1-3,text,true,,462,194,4,4,https://project-three-application-type.azurewebsites.net/api/Users/9,303,0,0
+1663498690901,476,Put User,200,OK,Stress_test 1-3,text,true,,403,279,4,4,https://project-three-application-type.azurewebsites.net/api/Users/9,476,0,0
+1663498689512,1907,Get Users,200,OK,Stress_test 1-4,text,true,,1212,192,4,4,https://project-three-application-type.azurewebsites.net/api/Users,1907,0,1439
+1663498691419,238,Post Users,200,OK,Stress_test 1-4,text,true,,403,279,5,5,https://project-three-application-type.azurewebsites.net/api/Users,238,0,0
+1663498691657,446,Delete Users,200,OK,Stress_test 1-4,,true,,211,216,5,5,https://project-three-application-type.azurewebsites.net/api/Users/5,446,0,0
+1663498692104,948,Get Users by Id,200,OK,Stress_test 1-4,text,true,,462,194,5,5,https://project-three-application-type.azurewebsites.net/api/Users/5,948,0,0
+1663498693053,437,Put User,200,OK,Stress_test 1-4,text,true,,403,280,5,5,https://project-three-application-type.azurewebsites.net/api/Users/5,437,0,0
+1663498691510,2069,Get Users,200,OK,Stress_test 1-5,text,true,,1212,192,6,6,https://project-three-application-type.azurewebsites.net/api/Users,2069,0,1767
+1663498693579,500,Post Users,200,OK,Stress_test 1-5,text,true,,403,280,6,6,https://project-three-application-type.azurewebsites.net/api/Users,500,0,0
+1663498694079,269,Delete Users,200,OK,Stress_test 1-5,,true,,211,216,6,6,https://project-three-application-type.azurewebsites.net/api/Users/1,269,0,0
+1663498694348,1474,Get Users by Id,200,OK,Stress_test 1-5,text,true,,462,194,7,7,https://project-three-application-type.azurewebsites.net/api/Users/1,1474,0,0
+1663498693513,2315,Get Users,200,OK,Stress_test 1-6,text,true,,1212,192,7,7,https://project-three-application-type.azurewebsites.net/api/Users,2315,0,1558
+1663498695822,785,Put User,200,OK,Stress_test 1-5,text,true,,403,281,7,7,https://project-three-application-type.azurewebsites.net/api/Users/1,785,0,0
+1663498695828,779,Post Users,200,OK,Stress_test 1-6,text,true,,403,277,7,7,https://project-three-application-type.azurewebsites.net/api/Users,779,0,0
+1663498696607,795,Delete Users,200,OK,Stress_test 1-6,,true,,211,216,7,7,https://project-three-application-type.azurewebsites.net/api/Users/7,795,0,0
+1663498697403,772,Get Users by Id,200,OK,Stress_test 1-6,text,true,,462,194,8,8,https://project-three-application-type.azurewebsites.net/api/Users/7,772,0,0
+1663498695512,2924,Get Users,200,OK,Stress_test 1-7,text,true,,1212,192,8,8,https://project-three-application-type.azurewebsites.net/api/Users,2923,0,2017
+1663498698437,676,Post Users,200,OK,Stress_test 1-7,text,true,,403,278,8,8,https://project-three-application-type.azurewebsites.net/api/Users,676,0,0
+1663498698176,1133,Put User,200,OK,Stress_test 1-6,text,true,,403,278,8,8,https://project-three-application-type.azurewebsites.net/api/Users/7,1133,0,0
+1663498699113,398,Delete Users,200,OK,Stress_test 1-7,,true,,211,216,9,9,https://project-three-application-type.azurewebsites.net/api/Users/3,398,0,0
+1663498697509,3124,Get Users,200,OK,Stress_test 1-8,text,true,,1212,192,9,9,https://project-three-application-type.azurewebsites.net/api/Users,3124,0,1990
+1663498699512,1128,Get Users by Id,200,OK,Stress_test 1-7,text,true,,462,194,9,9,https://project-three-application-type.azurewebsites.net/api/Users/3,1128,0,0
+1663498686497,14199,Get books,200,OK,Stress_test 1-1,text,true,,929982,192,9,9,https://project-three-application-type.azurewebsites.net/api/Books,307,0,0
+1663498700634,472,Post Users,200,OK,Stress_test 1-8,text,true,,403,278,9,9,https://project-three-application-type.azurewebsites.net/api/Users,472,0,0
+1663498700640,485,Put User,200,OK,Stress_test 1-7,text,true,,403,279,9,9,https://project-three-application-type.azurewebsites.net/api/Users/3,485,0,0
+1663498700698,521,Post Books,200,OK,Stress_test 1-1,text,true,,403,363,9,9,https://project-three-application-type.azurewebsites.net/api/Books,521,0,0
+1663498701107,522,Delete Users,200,OK,Stress_test 1-8,,true,,211,216,10,10,https://project-three-application-type.azurewebsites.net/api/Users/9,522,0,0
+1663498701219,558,Delete Books,200,OK,Stress_test 1-1,text,true,,6192,194,10,10,https://project-three-application-type.azurewebsites.net/api/Books/7,556,0,0
+1663498699512,2610,Get Users,200,OK,Stress_test 1-9,text,true,,1212,192,10,10,https://project-three-application-type.azurewebsites.net/api/Users,2610,0,2121
+1663498701630,492,Get Users by Id,200,OK,Stress_test 1-8,text,true,,462,194,10,10,https://project-three-application-type.azurewebsites.net/api/Users/9,492,0,0
+1663498701777,1075,Get Books by ID,200,OK,Stress_test 1-1,text,true,,4065,194,10,10,https://project-three-application-type.azurewebsites.net/api/Books/7,1075,0,0
+1663498702122,1170,Put User,200,OK,Stress_test 1-8,text,true,,403,279,10,10,https://project-three-application-type.azurewebsites.net/api/Users/9,1170,0,0
+1663498702122,1170,Post Users,200,OK,Stress_test 1-9,text,true,,403,279,10,10,https://project-three-application-type.azurewebsites.net/api/Users,1170,0,0
+1663498702852,881,Put Books,200,OK,Stress_test 1-1,text,true,,403,364,11,11,https://project-three-application-type.azurewebsites.net/api/Books/7,881,0,0
+1663498703291,593,Delete Users,200,OK,Stress_test 1-9,,true,,211,216,10,10,https://project-three-application-type.azurewebsites.net/api/Users/5,593,0,0
+1663498701512,2911,Get Users,200,OK,Stress_test 1-10,text,true,,1212,192,10,10,https://project-three-application-type.azurewebsites.net/api/Users,2911,0,2324
+1663498703885,1018,Get Users by Id,200,OK,Stress_test 1-9,text,true,,462,194,10,10,https://project-three-application-type.azurewebsites.net/api/Users/5,1017,0,0
+1663498704423,876,Post Users,200,OK,Stress_test 1-10,text,true,,403,280,10,10,https://project-three-application-type.azurewebsites.net/api/Users,876,0,0
+1663498704903,751,Put User,200,OK,Stress_test 1-9,text,true,,403,280,11,11,https://project-three-application-type.azurewebsites.net/api/Users/5,751,0,0
+1663498705299,891,Delete Users,200,OK,Stress_test 1-10,,true,,211,216,11,11,https://project-three-application-type.azurewebsites.net/api/Users/1,891,0,0
+1663498703511,2910,Get Users,200,OK,Stress_test 1-11,text,true,,1212,192,11,11,https://project-three-application-type.azurewebsites.net/api/Users,2910,0,2329
+1663498706191,543,Get Users by Id,200,OK,Stress_test 1-10,text,true,,462,194,11,11,https://project-three-application-type.azurewebsites.net/api/Users/1,543,0,0
+1663498706422,656,Post Users,200,OK,Stress_test 1-11,text,true,,403,277,11,11,https://project-three-application-type.azurewebsites.net/api/Users,656,0,0
+1663498706735,435,Put User,200,OK,Stress_test 1-10,text,true,,403,281,11,11,https://project-three-application-type.azurewebsites.net/api/Users/1,435,0,0
+1663498707079,876,Delete Users,200,OK,Stress_test 1-11,,true,,211,216,12,12,https://project-three-application-type.azurewebsites.net/api/Users/7,876,0,0
+1663498707957,942,Get Users by Id,200,OK,Stress_test 1-11,text,true,,462,194,12,12,https://project-three-application-type.azurewebsites.net/api/Users/7,942,0,0
+1663498708900,756,Put User,200,OK,Stress_test 1-11,text,true,,403,278,13,13,https://project-three-application-type.azurewebsites.net/api/Users/7,756,0,0
+1663498705510,5599,Get Users,200,OK,Stress_test 1-12,text,true,,1212,192,13,13,https://project-three-application-type.azurewebsites.net/api/Users,5599,0,4622
+1663498711110,1119,Post Users,200,OK,Stress_test 1-12,text,true,,403,278,14,14,https://project-three-application-type.azurewebsites.net/api/Users,1119,0,0
+1663498707509,5237,Get Users,200,OK,Stress_test 1-13,text,true,,1212,192,14,14,https://project-three-application-type.azurewebsites.net/api/Users,5237,0,2787
+1663498712230,681,Delete Users,200,OK,Stress_test 1-12,,true,,211,216,14,14,https://project-three-application-type.azurewebsites.net/api/Users/3,681,0,0
+1663498709509,3540,Get Users,200,OK,Stress_test 1-14,text,true,,1212,192,14,14,https://project-three-application-type.azurewebsites.net/api/Users,3540,0,3072
+1663498712747,533,Post Users,200,OK,Stress_test 1-13,text,true,,403,278,14,14,https://project-three-application-type.azurewebsites.net/api/Users,533,0,0
+1663498712911,532,Get Users by Id,200,OK,Stress_test 1-12,text,true,,462,194,14,14,https://project-three-application-type.azurewebsites.net/api/Users/3,532,0,0
+1663498713049,601,Post Users,200,OK,Stress_test 1-14,text,true,,403,279,15,15,https://project-three-application-type.azurewebsites.net/api/Users,601,0,0
+1663498713279,454,Delete Users,200,OK,Stress_test 1-13,,true,,211,216,15,15,https://project-three-application-type.azurewebsites.net/api/Users/9,454,0,0
+1663498713444,525,Put User,200,OK,Stress_test 1-12,text,true,,403,279,15,15,https://project-three-application-type.azurewebsites.net/api/Users/3,525,0,0
+1663498711508,2553,Get Users,200,OK,Stress_test 1-15,text,true,,1212,192,15,15,https://project-three-application-type.azurewebsites.net/api/Users,2553,0,2012
+1663498713650,550,Delete Users,200,OK,Stress_test 1-14,,true,,211,216,15,15,https://project-three-application-type.azurewebsites.net/api/Users/5,550,0,0
+1663498713734,689,Get Users by Id,200,OK,Stress_test 1-13,text,true,,462,194,15,15,https://project-three-application-type.azurewebsites.net/api/Users/9,689,0,0
+1663498714060,703,Post Users,200,OK,Stress_test 1-15,text,true,,403,280,15,15,https://project-three-application-type.azurewebsites.net/api/Users,703,0,0
+1663498714201,726,Get Users by Id,200,OK,Stress_test 1-14,text,true,,462,194,15,15,https://project-three-application-type.azurewebsites.net/api/Users/5,726,0,0
+1663498714423,938,Put User,200,OK,Stress_test 1-13,text,true,,403,279,15,15,https://project-three-application-type.azurewebsites.net/api/Users/9,938,0,0
+1663498696607,19310,Get books,200,OK,Stress_test 1-5,text,true,,927425,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,863,0,0
+1663498714763,1161,Delete Users,200,OK,Stress_test 1-15,,true,,211,216,16,16,https://project-three-application-type.azurewebsites.net/api/Users/1,1161,0,0
+1663498714928,1095,Put User,200,OK,Stress_test 1-14,text,true,,403,280,16,16,https://project-three-application-type.azurewebsites.net/api/Users/5,1095,0,0
+1663498688289,27831,Get books,200,OK,Stress_test 1-2,text,true,,916755,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,437,0,0
+1663498699309,17250,Get books,200,OK,Stress_test 1-6,text,true,,934975,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,1158,0,0
+1663498715917,897,Post Books,200,OK,Stress_test 1-5,text,true,,403,364,16,16,https://project-three-application-type.azurewebsites.net/api/Books,897,0,0
+1663498715925,892,Get Users by Id,200,OK,Stress_test 1-15,text,true,,462,194,16,16,https://project-three-application-type.azurewebsites.net/api/Users/1,891,0,0
+1663498713510,3308,Get Users,200,OK,Stress_test 1-16,text,true,,1212,192,16,16,https://project-three-application-type.azurewebsites.net/api/Users,3308,0,2418
+1663498716121,798,Post Books,200,OK,Stress_test 1-2,text,true,,403,363,16,16,https://project-three-application-type.azurewebsites.net/api/Books,798,0,0
+1663498716559,1160,Post Books,200,OK,Stress_test 1-6,text,true,,403,363,17,17,https://project-three-application-type.azurewebsites.net/api/Books,1160,0,0
+1663498716817,1022,Put User,200,OK,Stress_test 1-15,text,true,,403,281,17,17,https://project-three-application-type.azurewebsites.net/api/Users/1,1022,0,0
+1663498716818,1021,Post Users,200,OK,Stress_test 1-16,text,true,,403,277,17,17,https://project-three-application-type.azurewebsites.net/api/Users,1021,0,0
+1663498716920,1275,Delete Books,200,OK,Stress_test 1-2,text,true,,2939,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/3,1274,0,0
+1663498717720,1077,Delete Books,200,OK,Stress_test 1-6,text,true,,4908,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,1077,0,0
+1663498717840,965,Delete Users,200,OK,Stress_test 1-16,,true,,211,216,17,17,https://project-three-application-type.azurewebsites.net/api/Users/7,965,0,0
+1663498718196,948,Get Books by ID,200,OK,Stress_test 1-2,text,true,,4277,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/3,946,0,0
+1663498718807,1011,Get Users by Id,200,OK,Stress_test 1-16,text,true,,462,194,18,18,https://project-three-application-type.azurewebsites.net/api/Users/7,1011,0,0
+1663498715507,5093,Get Users,200,OK,Stress_test 1-17,text,true,,1212,192,18,18,https://project-three-application-type.azurewebsites.net/api/Users,5093,0,3992
+1663498719819,1414,Put User,200,OK,Stress_test 1-16,text,true,,403,278,18,18,https://project-three-application-type.azurewebsites.net/api/Users/7,1414,0,0
+1663498719144,2387,Put Books,200,OK,Stress_test 1-2,text,true,,403,364,19,19,https://project-three-application-type.azurewebsites.net/api/Books/3,2387,0,0
+1663498716814,5460,Delete Books,200,OK,Stress_test 1-5,text,true,,5133,194,18,18,https://project-three-application-type.azurewebsites.net/api/Books/1,5460,0,0
+1663498722275,712,Get Books by ID,200,OK,Stress_test 1-5,text,true,,3931,194,18,18,https://project-three-application-type.azurewebsites.net/api/Books/1,712,0,0
+1663498717493,5496,Get Users,200,OK,Stress_test 1-18,text,true,,1212,192,18,18,https://project-three-application-type.azurewebsites.net/api/Users,5496,0,3107
+1663498720601,2419,Post Users,200,OK,Stress_test 1-17,text,true,,403,278,18,18,https://project-three-application-type.azurewebsites.net/api/Users,2419,0,0
+1663498718798,4721,Get Books by ID,200,OK,Stress_test 1-6,text,true,,4605,194,19,19,https://project-three-application-type.azurewebsites.net/api/Books/7,4721,0,0
+1663498722986,571,Put Books,200,OK,Stress_test 1-5,text,true,,403,365,19,19,https://project-three-application-type.azurewebsites.net/api/Books/1,571,0,0
+1663498722989,568,Post Users,200,OK,Stress_test 1-18,text,true,,403,278,19,19,https://project-three-application-type.azurewebsites.net/api/Users,568,0,0
+1663498723019,842,Delete Users,200,OK,Stress_test 1-17,,true,,211,216,18,18,https://project-three-application-type.azurewebsites.net/api/Users/3,842,0,0
+1663498723519,1057,Put Books,200,OK,Stress_test 1-6,text,true,,403,364,18,18,https://project-three-application-type.azurewebsites.net/api/Books/7,1056,0,0
+1663498723558,1135,Delete Users,200,OK,Stress_test 1-18,,true,,211,216,17,17,https://project-three-application-type.azurewebsites.net/api/Users/9,1135,0,0
+1663498723861,924,Get Users by Id,200,OK,Stress_test 1-17,text,true,,462,194,17,17,https://project-three-application-type.azurewebsites.net/api/Users/3,924,0,0
+1663498724694,687,Get Users by Id,200,OK,Stress_test 1-18,text,true,,462,194,17,17,https://project-three-application-type.azurewebsites.net/api/Users/9,687,0,0
+1663498724786,635,Put User,200,OK,Stress_test 1-17,text,true,,403,279,17,17,https://project-three-application-type.azurewebsites.net/api/Users/3,635,0,0
+1663498725381,691,Put User,200,OK,Stress_test 1-18,text,true,,403,279,18,18,https://project-three-application-type.azurewebsites.net/api/Users/9,691,0,0
+1663498721502,4630,Get Users,200,OK,Stress_test 1-20,text,true,,1212,192,18,18,https://project-three-application-type.azurewebsites.net/api/Users,4630,0,2379
+1663498723492,3347,Get Users,200,OK,Stress_test 1-21,text,true,,1212,192,18,18,https://project-three-application-type.azurewebsites.net/api/Users,3347,0,2426
+1663498693490,34035,Get books,200,OK,Stress_test 1-4,text,true,,912385,192,19,19,https://project-three-application-type.azurewebsites.net/api/Books,592,0,0
+1663498726839,889,Post Users,200,OK,Stress_test 1-21,text,true,,403,277,19,19,https://project-three-application-type.azurewebsites.net/api/Users,889,0,0
+1663498727525,1050,Post Books,200,OK,Stress_test 1-4,text,true,,403,363,19,19,https://project-three-application-type.azurewebsites.net/api/Books,1050,0,0
+1663498727729,994,Delete Users,200,OK,Stress_test 1-21,,true,,211,216,19,19,https://project-three-application-type.azurewebsites.net/api/Users/7,994,0,0
+1663498726131,2729,Post Users,200,OK,Stress_test 1-20,text,true,,403,280,19,19,https://project-three-application-type.azurewebsites.net/api/Users,2729,0,0
+1663498725491,4036,Get Users,200,OK,Stress_test 1-22,text,true,,1212,192,20,20,https://project-three-application-type.azurewebsites.net/api/Users,4036,0,2850
+1663498728575,1105,Delete Books,200,OK,Stress_test 1-4,text,true,,4986,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/5,1100,0,0
+1663498728723,1126,Get Users by Id,200,OK,Stress_test 1-21,text,true,,462,194,20,20,https://project-three-application-type.azurewebsites.net/api/Users/7,1126,0,0
+1663498728860,998,Delete Users,200,OK,Stress_test 1-20,,true,,211,216,20,20,https://project-three-application-type.azurewebsites.net/api/Users/1,998,0,0
+1663498729528,1078,Post Users,200,OK,Stress_test 1-22,text,true,,403,278,20,20,https://project-three-application-type.azurewebsites.net/api/Users,1078,0,0
+1663498719506,11350,Get Users,200,OK,Stress_test 1-19,text,true,,1212,192,20,20,https://project-three-application-type.azurewebsites.net/api/Users,11350,0,10158
+1663498729681,1219,Get Books by ID,200,OK,Stress_test 1-4,text,true,,6107,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/5,1216,0,0
+1663498729858,1166,Get Users by Id,200,OK,Stress_test 1-20,text,true,,462,194,20,20,https://project-three-application-type.azurewebsites.net/api/Users/1,1166,0,0
+1663498729849,1175,Put User,200,OK,Stress_test 1-21,text,true,,403,278,20,20,https://project-three-application-type.azurewebsites.net/api/Users/7,1175,0,0
+1663498730607,919,Delete Users,200,OK,Stress_test 1-22,,true,,211,216,21,21,https://project-three-application-type.azurewebsites.net/api/Users/3,919,0,0
+1663498730855,833,Post Users,200,OK,Stress_test 1-19,text,true,,403,279,21,21,https://project-three-application-type.azurewebsites.net/api/Users,833,0,0
+1663498730900,842,Put Books,200,OK,Stress_test 1-4,text,true,,403,364,21,21,https://project-three-application-type.azurewebsites.net/api/Books/5,842,0,0
+1663498731024,932,Put User,200,OK,Stress_test 1-20,text,true,,403,281,20,20,https://project-three-application-type.azurewebsites.net/api/Users/1,932,0,0
+1663498731527,852,Get Users by Id,200,OK,Stress_test 1-22,text,true,,462,194,20,20,https://project-three-application-type.azurewebsites.net/api/Users/3,852,0,0
+1663498731688,708,Delete Users,200,OK,Stress_test 1-19,,true,,211,216,20,20,https://project-three-application-type.azurewebsites.net/api/Users/5,708,0,0
+1663498729489,4223,Get Users,200,OK,Stress_test 1-24,text,true,,1212,192,21,21,https://project-three-application-type.azurewebsites.net/api/Users,4223,0,2894
+1663498733712,602,Post Users,200,OK,Stress_test 1-24,text,true,,403,279,21,21,https://project-three-application-type.azurewebsites.net/api/Users,602,0,0
+1663498732379,2510,Put User,200,OK,Stress_test 1-22,text,true,,403,279,21,21,https://project-three-application-type.azurewebsites.net/api/Users/3,2510,0,0
+1663498732406,2550,Get Users by Id,200,OK,Stress_test 1-19,text,true,,462,194,21,21,https://project-three-application-type.azurewebsites.net/api/Users/5,2550,0,0
+1663498707170,28075,Get books,200,OK,Stress_test 1-10,text,true,,913664,192,21,21,https://project-three-application-type.azurewebsites.net/api/Books,1227,0,0
+1663498735245,1081,Post Books,200,OK,Stress_test 1-10,text,true,,403,364,22,22,https://project-three-application-type.azurewebsites.net/api/Books,1081,0,0
+1663498734315,2783,Delete Users,200,OK,Stress_test 1-24,,true,,211,216,22,22,https://project-three-application-type.azurewebsites.net/api/Users/5,2783,0,0
+1663498736326,1300,Delete Books,200,OK,Stress_test 1-10,text,true,,3594,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/1,1300,0,0
+1663498734957,2686,Put User,200,OK,Stress_test 1-19,text,true,,403,280,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,2686,0,0
+1663498737098,1035,Get Users by Id,200,OK,Stress_test 1-24,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,1035,0,0
+1663498737626,742,Get Books by ID,200,OK,Stress_test 1-10,text,true,,4588,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/1,739,0,0
+1663498691377,47045,Get books,200,OK,Stress_test 1-3,text,true,,917905,192,23,23,https://project-three-application-type.azurewebsites.net/api/Books,283,0,0
+1663498727490,10925,Get Users,200,OK,Stress_test 1-23,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,10925,0,10384
+1663498738134,864,Put User,200,OK,Stress_test 1-24,text,true,,403,280,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,864,0,0
+1663498735489,3615,Get Users,200,OK,Stress_test 1-27,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,3615,0,2730
+1663498738369,740,Put Books,200,OK,Stress_test 1-10,text,true,,403,365,23,23,https://project-three-application-type.azurewebsites.net/api/Books/1,740,0,0
+1663498738427,1169,Post Users,200,OK,Stress_test 1-23,text,true,,403,278,23,23,https://project-three-application-type.azurewebsites.net/api/Users,1169,0,0
+1663498738427,1172,Post Books,200,OK,Stress_test 1-3,text,true,,403,363,23,23,https://project-three-application-type.azurewebsites.net/api/Books,1172,0,0
+1663498739596,1039,Delete Users,200,OK,Stress_test 1-23,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,1039,0,0
+1663498739599,1189,Delete Books,200,OK,Stress_test 1-3,text,true,,5715,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/9,1173,0,0
+1663498739104,2069,Post Users,200,OK,Stress_test 1-27,text,true,,403,278,23,23,https://project-three-application-type.azurewebsites.net/api/Users,2069,0,0
+1663498740636,713,Get Users by Id,200,OK,Stress_test 1-23,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,713,0,0
+1663498740788,652,Get Books by ID,200,OK,Stress_test 1-3,text,true,,5743,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/9,615,0,0
+1663498737497,4749,Get Users,200,OK,Stress_test 1-28,text,true,,1212,192,24,24,https://project-three-application-type.azurewebsites.net/api/Users,4749,0,3476
+1663498741173,1221,Delete Users,200,OK,Stress_test 1-27,,true,,211,216,24,24,https://project-three-application-type.azurewebsites.net/api/Users/3,1221,0,0
+1663498731499,10932,Get Users,200,OK,Stress_test 1-25,text,true,,1212,192,24,24,https://project-three-application-type.azurewebsites.net/api/Users,10932,0,9674
+1663498741440,1202,Put Books,200,OK,Stress_test 1-3,text,true,,403,364,24,24,https://project-three-application-type.azurewebsites.net/api/Books/9,1202,0,0
+1663498742246,573,Post Users,200,OK,Stress_test 1-28,text,true,,403,278,23,23,https://project-three-application-type.azurewebsites.net/api/Users,573,0,0
+1663498739491,3501,Get Users,200,OK,Stress_test 1-29,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,3501,0,2904
+1663498742395,597,Get Users by Id,200,OK,Stress_test 1-27,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/3,597,0,0
+1663498742446,553,Post Users,200,OK,Stress_test 1-25,text,true,,403,280,23,23,https://project-three-application-type.azurewebsites.net/api/Users,553,0,0
+1663498741350,1999,Put User,200,OK,Stress_test 1-23,text,true,,403,279,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,1999,0,0
+1663498742819,975,Delete Users,200,OK,Stress_test 1-28,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,975,0,0
+1663498743000,958,Delete Users,200,OK,Stress_test 1-25,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,958,0,0
+1663498742992,961,Put User,200,OK,Stress_test 1-27,text,true,,403,279,23,23,https://project-three-application-type.azurewebsites.net/api/Users/3,961,0,0
+1663498743795,528,Get Users by Id,200,OK,Stress_test 1-28,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,528,0,0
+1663498743972,524,Get Users by Id,200,OK,Stress_test 1-25,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,524,0,0
+1663498733490,12062,Get Users,200,OK,Stress_test 1-26,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,12062,0,10793
+1663498742992,2840,Post Users,200,OK,Stress_test 1-29,text,true,,403,279,23,23,https://project-three-application-type.azurewebsites.net/api/Users,2840,0,0
+1663498745552,770,Post Users,200,OK,Stress_test 1-26,text,true,,403,277,23,23,https://project-three-application-type.azurewebsites.net/api/Users,770,0,0
+1663498744323,2008,Put User,200,OK,Stress_test 1-28,text,true,,403,279,23,23,https://project-three-application-type.azurewebsites.net/api/Users/9,2008,0,0
+1663498745832,562,Delete Users,200,OK,Stress_test 1-29,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,562,0,0
+1663498744496,2249,Put User,200,OK,Stress_test 1-25,text,true,,403,281,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,2249,0,0
+1663498741487,7312,Get Users,200,OK,Stress_test 1-30,text,true,,1212,192,23,23,https://project-three-application-type.azurewebsites.net/api/Users,7312,0,6241
+1663498746323,2497,Delete Users,200,OK,Stress_test 1-26,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/7,2497,0,0
+1663498746395,2464,Get Users by Id,200,OK,Stress_test 1-29,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,2464,0,0
+1663498748800,744,Post Users,200,OK,Stress_test 1-30,text,true,,403,280,23,23,https://project-three-application-type.azurewebsites.net/api/Users,744,0,0
+1663498748821,850,Get Users by Id,200,OK,Stress_test 1-26,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/7,850,0,0
+1663498748860,992,Put User,200,OK,Stress_test 1-29,text,true,,403,280,23,23,https://project-three-application-type.azurewebsites.net/api/Users/5,992,0,0
+1663498749544,834,Delete Users,200,OK,Stress_test 1-30,,true,,211,216,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,834,0,0
+1663498749671,716,Put User,200,OK,Stress_test 1-26,text,true,,403,278,23,23,https://project-three-application-type.azurewebsites.net/api/Users/7,715,0,0
+1663498750378,3423,Get Users by Id,200,OK,Stress_test 1-30,text,true,,462,194,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,3423,0,0
+1663498753802,1117,Put User,200,OK,Stress_test 1-30,text,true,,403,281,23,23,https://project-three-application-type.azurewebsites.net/api/Users/1,1117,0,0
+1663498709657,47729,Get books,200,OK,Stress_test 1-11,text,true,,919473,192,23,23,https://project-three-application-type.azurewebsites.net/api/Books,1042,0,0
+1663498757387,1232,Post Books,200,OK,Stress_test 1-11,text,true,,403,363,23,23,https://project-three-application-type.azurewebsites.net/api/Books,1232,0,0
+1663498758618,893,Delete Books,200,OK,Stress_test 1-11,text,true,,5950,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/7,877,0,0
+1663498759511,341,Get Books by ID,200,OK,Stress_test 1-11,text,true,,4768,194,23,23,https://project-three-application-type.azurewebsites.net/api/Books/7,339,0,0
+1663498703291,56735,Get books,200,OK,Stress_test 1-8,text,true,,926433,192,23,23,https://project-three-application-type.azurewebsites.net/api/Books,594,0,0
+1663498759852,230,Put Books,200,OK,Stress_test 1-11,text,true,,403,364,23,23,https://project-three-application-type.azurewebsites.net/api/Books/7,230,0,0
+1663498705655,56811,Get books,200,OK,Stress_test 1-9,text,true,,916123,192,22,22,https://project-three-application-type.azurewebsites.net/api/Books,724,0,0
+1663498760026,3035,Post Books,200,OK,Stress_test 1-8,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,3035,0,2461
+1663498763061,731,Delete Books,200,OK,Stress_test 1-8,text,true,,5965,194,22,22,https://project-three-application-type.azurewebsites.net/api/Books/9,724,0,0
+1663498763792,1021,Get Books by ID,200,OK,Stress_test 1-8,text,true,,4991,194,22,22,https://project-three-application-type.azurewebsites.net/api/Books/9,1020,0,0
+1663498762467,3142,Post Books,200,OK,Stress_test 1-9,text,true,,403,363,22,22,https://project-three-application-type.azurewebsites.net/api/Books,3142,0,2025
+1663498764813,959,Put Books,200,OK,Stress_test 1-8,text,true,,403,364,22,22,https://project-three-application-type.azurewebsites.net/api/Books/9,959,0,0
+1663498765609,939,Delete Books,200,OK,Stress_test 1-9,text,true,,5458,194,21,21,https://project-three-application-type.azurewebsites.net/api/Books/5,934,0,0
+1663498766548,705,Get Books by ID,200,OK,Stress_test 1-9,text,true,,5909,194,21,21,https://project-three-application-type.azurewebsites.net/api/Books/5,704,0,0
+1663498713970,53379,Get books,200,OK,Stress_test 1-12,text,true,,920985,192,21,21,https://project-three-application-type.azurewebsites.net/api/Books,775,0,0
+1663498701125,67036,Get books,200,OK,Stress_test 1-7,text,true,,919333,192,21,21,https://project-three-application-type.azurewebsites.net/api/Books,577,0,0
+1663498767253,912,Put Books,200,OK,Stress_test 1-9,text,true,,403,364,21,21,https://project-three-application-type.azurewebsites.net/api/Books/5,912,0,0
+1663498715361,52902,Get books,200,OK,Stress_test 1-13,text,true,,916493,192,20,20,https://project-three-application-type.azurewebsites.net/api/Books,887,0,0
+1663498767350,2653,Post Books,200,OK,Stress_test 1-12,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,2652,0,1792
+1663498770004,806,Delete Books,200,OK,Stress_test 1-12,text,true,,5648,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/3,804,0,0
+1663498768264,3135,Post Books,200,OK,Stress_test 1-13,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,3135,0,2415
+1663498768161,3238,Post Books,200,OK,Stress_test 1-7,text,true,,403,363,20,20,https://project-three-application-type.azurewebsites.net/api/Books,3238,0,2517
+1663498770810,747,Get Books by ID,200,OK,Stress_test 1-12,text,true,,4618,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/3,747,0,0
+1663498721233,50702,Get books,200,OK,Stress_test 1-16,text,true,,925632,192,20,20,https://project-three-application-type.azurewebsites.net/api/Books,1158,0,0
+1663498771399,612,Delete Books,200,OK,Stress_test 1-7,text,true,,4693,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/3,612,0,0
+1663498771399,637,Delete Books,200,OK,Stress_test 1-13,text,true,,5246,194,20,20,https://project-three-application-type.azurewebsites.net/api/Books/9,637,0,0
+1663498771557,495,Put Books,200,OK,Stress_test 1-12,text,true,,403,364,20,20,https://project-three-application-type.azurewebsites.net/api/Books/3,495,0,0
+1663498771935,497,Post Books,200,OK,Stress_test 1-16,text,true,,403,363,19,19,https://project-three-application-type.azurewebsites.net/api/Books,497,0,0
+1663498772012,625,Get Books by ID,200,OK,Stress_test 1-7,text,true,,4762,194,19,19,https://project-three-application-type.azurewebsites.net/api/Books/3,625,0,0
+1663498772037,721,Get Books by ID,200,OK,Stress_test 1-13,text,true,,4901,194,19,19,https://project-three-application-type.azurewebsites.net/api/Books/9,721,0,0
+1663498772432,1202,Delete Books,200,OK,Stress_test 1-16,text,true,,3888,194,19,19,https://project-three-application-type.azurewebsites.net/api/Books/7,1202,0,0
+1663498772637,1096,Put Books,200,OK,Stress_test 1-7,text,true,,403,364,19,19,https://project-three-application-type.azurewebsites.net/api/Books/3,1096,0,0
+1663498772759,1036,Put Books,200,OK,Stress_test 1-13,text,true,,403,364,18,18,https://project-three-application-type.azurewebsites.net/api/Books/9,1036,0,0
+1663498773635,3027,Get Books by ID,200,OK,Stress_test 1-16,text,true,,6170,194,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,3027,0,2213
+1663498776663,1181,Put Books,200,OK,Stress_test 1-16,text,true,,403,364,17,17,https://project-three-application-type.azurewebsites.net/api/Books/7,1181,0,0
+1663498716024,63065,Get books,200,OK,Stress_test 1-14,text,true,,917622,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,853,0,0
+1663498731024,49546,Get books,200,OK,Stress_test 1-21,text,true,,935876,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,954,0,0
+1663498717840,63404,Get books,200,OK,Stress_test 1-15,text,true,,892307,192,16,16,https://project-three-application-type.azurewebsites.net/api/Books,969,0,0
+1663498780570,882,Post Books,200,OK,Stress_test 1-21,text,true,,403,363,16,16,https://project-three-application-type.azurewebsites.net/api/Books,882,0,0
+1663498781452,585,Delete Books,200,OK,Stress_test 1-21,text,true,,4214,194,16,16,https://project-three-application-type.azurewebsites.net/api/Books/7,585,0,0
+1663498779090,3016,Post Books,200,OK,Stress_test 1-14,text,true,,403,363,16,16,https://project-three-application-type.azurewebsites.net/api/Books,3016,0,2486
+1663498782037,869,Get Books by ID,200,OK,Stress_test 1-21,text,true,,6919,194,16,16,https://project-three-application-type.azurewebsites.net/api/Books/7,869,0,0
+1663498782907,663,Put Books,200,OK,Stress_test 1-21,text,true,,403,364,16,16,https://project-three-application-type.azurewebsites.net/api/Books/7,663,0,0
+1663498731957,51767,Get books,200,OK,Stress_test 1-20,text,true,,920500,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,611,0,0
+1663498725421,59880,Get books,200,OK,Stress_test 1-17,text,true,,902700,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,1182,0,0
+1663498734889,50957,Get books,200,OK,Stress_test 1-22,text,true,,922240,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,1086,0,0
+1663498738998,46959,Get books,200,OK,Stress_test 1-24,text,true,,909397,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,6945,0,0
+1663498781245,4755,Post Books,200,OK,Stress_test 1-15,text,true,,403,364,15,15,https://project-three-application-type.azurewebsites.net/api/Books,4755,0,3996
+1663498785957,583,Post Books,200,OK,Stress_test 1-24,text,true,,403,363,15,15,https://project-three-application-type.azurewebsites.net/api/Books,583,0,0
+1663498726073,60564,Get books,200,OK,Stress_test 1-18,text,true,,925382,192,15,15,https://project-three-application-type.azurewebsites.net/api/Books,7150,0,0
+1663498783725,2918,Post Books,200,OK,Stress_test 1-20,text,true,,403,364,15,15,https://project-three-application-type.azurewebsites.net/api/Books,2918,0,2275
+1663498786001,683,Delete Books,200,OK,Stress_test 1-15,text,true,,4109,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/1,682,0,0
+1663498782107,4580,Delete Books,200,OK,Stress_test 1-14,text,true,,4946,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/5,4580,0,0
+1663498786541,634,Delete Books,200,OK,Stress_test 1-24,text,true,,4162,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/5,634,0,0
+1663498786643,537,Delete Books,200,OK,Stress_test 1-20,text,true,,3986,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/1,536,0,0
+1663498786684,556,Get Books by ID,200,OK,Stress_test 1-15,text,true,,6036,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/1,556,0,0
+1663498785302,2401,Post Books,200,OK,Stress_test 1-17,text,true,,403,363,15,15,https://project-three-application-type.azurewebsites.net/api/Books,2401,0,1875
+1663498786687,1071,Get Books by ID,200,OK,Stress_test 1-14,text,true,,5822,194,15,15,https://project-three-application-type.azurewebsites.net/api/Books/5,549,0,0
+1663498787241,527,Put Books,200,OK,Stress_test 1-15,text,true,,403,365,15,15,https://project-three-application-type.azurewebsites.net/api/Books/1,527,0,0
+1663498787175,610,Get Books by ID,200,OK,Stress_test 1-24,text,true,,6050,194,14,14,https://project-three-application-type.azurewebsites.net/api/Books/5,600,0,0
+1663498787180,617,Get Books by ID,200,OK,Stress_test 1-20,text,true,,4822,194,14,14,https://project-three-application-type.azurewebsites.net/api/Books/1,614,0,0
+1663498737644,50211,Get books,200,OK,Stress_test 1-19,text,true,,904619,192,14,14,https://project-three-application-type.azurewebsites.net/api/Books,748,0,0
+1663498785846,2107,Post Books,200,OK,Stress_test 1-22,text,true,,403,363,14,14,https://project-three-application-type.azurewebsites.net/api/Books,2107,0,1722
+1663498743972,43995,Get books,200,OK,Stress_test 1-27,text,true,,907571,192,14,14,https://project-three-application-type.azurewebsites.net/api/Books,548,0,0
+1663498787759,318,Put Books,200,OK,Stress_test 1-14,text,true,,403,364,14,14,https://project-three-application-type.azurewebsites.net/api/Books/5,318,0,0
+1663498787704,393,Delete Books,200,OK,Stress_test 1-17,text,true,,4186,194,13,13,https://project-three-application-type.azurewebsites.net/api/Books/3,393,0,0
+1663498787785,325,Put Books,200,OK,Stress_test 1-24,text,true,,403,364,13,13,https://project-three-application-type.azurewebsites.net/api/Books/5,325,0,0
+1663498787797,314,Put Books,200,OK,Stress_test 1-20,text,true,,403,365,13,13,https://project-three-application-type.azurewebsites.net/api/Books/1,314,0,0
+1663498787968,278,Post Books,200,OK,Stress_test 1-27,text,true,,403,363,11,11,https://project-three-application-type.azurewebsites.net/api/Books,278,0,0
+1663498787955,310,Delete Books,200,OK,Stress_test 1-22,text,true,,4402,194,11,11,https://project-three-application-type.azurewebsites.net/api/Books/3,308,0,0
+1663498786638,1675,Post Books,200,OK,Stress_test 1-18,text,true,,403,363,11,11,https://project-three-application-type.azurewebsites.net/api/Books,1675,0,1438
+1663498788098,297,Get Books by ID,200,OK,Stress_test 1-17,text,true,,4206,194,11,11,https://project-three-application-type.azurewebsites.net/api/Books/3,295,0,0
+1663498788247,409,Delete Books,200,OK,Stress_test 1-27,text,true,,4854,194,11,11,https://project-three-application-type.azurewebsites.net/api/Books/3,409,0,0
+1663498788265,405,Get Books by ID,200,OK,Stress_test 1-22,text,true,,4706,194,11,11,https://project-three-application-type.azurewebsites.net/api/Books/3,403,0,0
+1663498788314,358,Delete Books,200,OK,Stress_test 1-18,text,true,,905,194,11,11,https://project-three-application-type.azurewebsites.net/api/Books/9,358,0,0
+1663498788395,296,Put Books,200,OK,Stress_test 1-17,text,true,,403,364,11,11,https://project-three-application-type.azurewebsites.net/api/Books/3,296,0,0
+1663498788656,395,Get Books by ID,200,OK,Stress_test 1-27,text,true,,906,194,10,10,https://project-three-application-type.azurewebsites.net/api/Books/3,395,0,0
+1663498788671,388,Put Books,200,OK,Stress_test 1-22,text,true,,403,364,10,10,https://project-three-application-type.azurewebsites.net/api/Books/3,388,0,0
+1663498787855,1433,Post Books,200,OK,Stress_test 1-19,text,true,,403,363,9,9,https://project-three-application-type.azurewebsites.net/api/Books,1433,0,969
+1663498789051,484,Put Books,200,OK,Stress_test 1-27,text,true,,403,364,9,9,https://project-three-application-type.azurewebsites.net/api/Books/3,484,0,0
+1663498789290,342,Delete Books,200,OK,Stress_test 1-19,text,true,,906,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/5,342,0,0
+1663498746332,43328,Get books,200,OK,Stress_test 1-28,text,true,,948657,192,8,8,https://project-three-application-type.azurewebsites.net/api/Books,6520,0,0
+1663498788672,1432,Get Books by ID,200,OK,Stress_test 1-18,text,true,,906,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/9,1432,0,0
+1663498789632,631,Get Books by ID,200,OK,Stress_test 1-19,text,true,,906,194,8,8,https://project-three-application-type.azurewebsites.net/api/Books/5,631,0,0
+1663498789661,615,Post Books,200,OK,Stress_test 1-28,text,true,,403,363,8,8,https://project-three-application-type.azurewebsites.net/api/Books,615,0,0
+1663498790105,538,Put Books,200,OK,Stress_test 1-18,text,true,,403,364,8,8,https://project-three-application-type.azurewebsites.net/api/Books/9,538,0,0
+1663498790263,462,Put Books,200,OK,Stress_test 1-19,text,true,,403,364,7,7,https://project-three-application-type.azurewebsites.net/api/Books/5,462,0,0
+1663498790277,470,Delete Books,200,OK,Stress_test 1-28,text,true,,905,194,6,6,https://project-three-application-type.azurewebsites.net/api/Books/9,470,0,0
+1663498790748,535,Get Books by ID,200,OK,Stress_test 1-28,text,true,,906,194,6,6,https://project-three-application-type.azurewebsites.net/api/Books/9,535,0,0
+1663498791283,593,Put Books,200,OK,Stress_test 1-28,text,true,,403,364,6,6,https://project-three-application-type.azurewebsites.net/api/Books/9,593,0,0
+1663498746745,45343,Get books,200,OK,Stress_test 1-25,text,true,,920590,192,5,5,https://project-three-application-type.azurewebsites.net/api/Books,5312,0,0
+1663498754920,38190,Get books,200,OK,Stress_test 1-30,text,true,,903765,192,5,5,https://project-three-application-type.azurewebsites.net/api/Books,4812,0,0
+1663498793109,208,Post Books,200,OK,Stress_test 1-30,text,true,,403,364,5,5,https://project-three-application-type.azurewebsites.net/api/Books,208,0,0
+1663498793317,213,Delete Books,200,OK,Stress_test 1-30,text,true,,906,194,5,5,https://project-three-application-type.azurewebsites.net/api/Books/1,213,0,0
+1663498792090,1461,Post Books,200,OK,Stress_test 1-25,text,true,,403,364,5,5,https://project-three-application-type.azurewebsites.net/api/Books,1461,0,1239
+1663498793530,226,Get Books by ID,200,OK,Stress_test 1-30,text,true,,906,194,5,5,https://project-three-application-type.azurewebsites.net/api/Books/1,226,0,0
+1663498793550,227,Delete Books,200,OK,Stress_test 1-25,text,true,,906,194,5,5,https://project-three-application-type.azurewebsites.net/api/Books/1,227,0,0
+1663498743350,50447,Get books,200,OK,Stress_test 1-23,text,true,,909573,192,5,5,https://project-three-application-type.azurewebsites.net/api/Books,853,0,0
+1663498793778,234,Get Books by ID,200,OK,Stress_test 1-25,text,true,,906,194,5,5,https://project-three-application-type.azurewebsites.net/api/Books/1,234,0,0
+1663498793757,249,Put Books,200,OK,Stress_test 1-30,text,true,,403,365,5,5,https://project-three-application-type.azurewebsites.net/api/Books/1,249,0,0
+1663498749853,44184,Get books,200,OK,Stress_test 1-29,text,true,,914833,192,4,4,https://project-three-application-type.azurewebsites.net/api/Books,812,0,0
+1663498794024,238,Put Books,200,OK,Stress_test 1-25,text,true,,403,365,4,4,https://project-three-application-type.azurewebsites.net/api/Books/1,238,0,0
+1663498794036,229,Post Books,200,OK,Stress_test 1-29,text,true,,403,363,3,3,https://project-three-application-type.azurewebsites.net/api/Books,229,0,0
+1663498750387,43956,Get books,200,OK,Stress_test 1-26,text,true,,932861,192,3,3,https://project-three-application-type.azurewebsites.net/api/Books,1378,0,0
+1663498794265,218,Delete Books,200,OK,Stress_test 1-29,text,true,,906,194,3,3,https://project-three-application-type.azurewebsites.net/api/Books/5,218,0,0
+1663498794483,228,Get Books by ID,200,OK,Stress_test 1-29,text,true,,906,194,3,3,https://project-three-application-type.azurewebsites.net/api/Books/5,227,0,0
+1663498793798,915,Post Books,200,OK,Stress_test 1-23,text,true,,403,363,3,3,https://project-three-application-type.azurewebsites.net/api/Books,915,0,695
+1663498794711,212,Put Books,200,OK,Stress_test 1-29,text,true,,403,364,3,3,https://project-three-application-type.azurewebsites.net/api/Books/5,212,0,0
+1663498794714,218,Delete Books,200,OK,Stress_test 1-23,text,true,,906,194,2,2,https://project-three-application-type.azurewebsites.net/api/Books/9,218,0,0
+1663498794932,217,Get Books by ID,200,OK,Stress_test 1-23,text,true,,906,194,2,2,https://project-three-application-type.azurewebsites.net/api/Books/9,217,0,0
+1663498794342,852,Post Books,200,OK,Stress_test 1-26,text,true,,403,363,2,2,https://project-three-application-type.azurewebsites.net/api/Books,852,0,640
+1663498795149,203,Put Books,200,OK,Stress_test 1-23,text,true,,403,364,2,2,https://project-three-application-type.azurewebsites.net/api/Books/9,203,0,0
+1663498795194,218,Delete Books,200,OK,Stress_test 1-26,text,true,,906,194,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,218,0,0
+1663498795413,225,Get Books by ID,200,OK,Stress_test 1-26,text,true,,906,194,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,225,0,0
+1663498795638,218,Put Books,200,OK,Stress_test 1-26,text,true,,403,364,1,1,https://project-three-application-type.azurewebsites.net/api/Books/7,218,0,0
