@@ -1,4 +1,4 @@
-# Azure GUIDS
+# Azure GUIDES
 variable "subscription_id" {}
 variable "client_id" {}
 variable "client_secret" {}
@@ -14,9 +14,3 @@ variable virtual_network_name {}
 variable address_prefix_test {}
 variable address_space {}
 
-# Virtual Machine
-variable vm_admin_username {}
-variable vm_public_key {}
-
-# Tags
-variable "project" {}

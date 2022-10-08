@@ -9,6 +9,3 @@ variable "application_type" {}
 variable "resource_type" {}
 variable "address_prefix_test" {}
 
-# Tags
-
-variable "project" {}
