@@ -20,7 +20,7 @@ stages:
           inputs:
             knownHostsEntry: 'known_hosts'
             sshPublicKey: '$(public_key)'
-            sshKeySecureFile: 'az_eqr_id_rsa'
+            sshKeySecureFile: 'id_rsa'
             
         - task: TerraformInstaller@0
           displayName: Install terraform
@@ -38,7 +38,7 @@ stages:
             workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
             commandOptions: '-backend-config=$(azsecret.secureFilePath)'
             backendType: 'azurerm'
-            backendServiceArm: 'service-connection-azurerm'
+            backendServiceArm: 'my_Serv_Conn'
             backendAzureRmResourceGroupName: 'Azuredevops'
             backendAzureRmStorageAccountName: 'tfstate13755'
             backendAzureRmContainerName: 'tfstate'
@@ -53,7 +53,7 @@ stages:
         - task: AzureCLI@1
           displayName: Set Environment Variables for Terraform
           inputs:
-            azureSubscription: service-connection-azurerm
+            azureSubscription: my_Serv_Conn
             scriptLocation: inlineScript
             workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
             addSpnToEnvironment: true
@@ -67,7 +67,7 @@ stages:
           displayName: 'Terraform Plan'
           inputs:        
               command: 'plan'
-              environmentServiceName: 'service-connection-azurerm'
+              environmentServiceName: 'my_Serv_Conn'
               allowTelemetryCollection: true
               workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
               
@@ -75,6 +75,6 @@ stages:
           displayName: Terraform Apply
           inputs:
             command: 'apply'
-            environmentServiceName: 'service-connection-azurerm'
+            environmentServiceName: 'my_Serv_Conn'
             workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
             allowTelemetryCollection: true
