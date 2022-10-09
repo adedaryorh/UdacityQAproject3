@@ -173,7 +173,7 @@ stages:
     jobs:
     - job: IntegrationTests
       displayName: Integration Tests For UI and Selenium
-      pool: myAgentPool
+      pool: my_Agent
       steps:
       - task: CmdLine@2
         displayName: Install Newman
@@ -201,7 +201,7 @@ stages:
 
     - job: UITests
       displayName: Selenuim UI Tests
-      pool: myAgentPool
+      pool: my_Agent
       steps:
       - task: Bash@3
         displayName: 'Setup VM environment'
@@ -250,7 +250,7 @@ stages:
 
     - job: PerformanceTest
       displayName: Test JMeter
-      pool: myAgentPool
+      pool: my_Agent
       steps:
           - bash: |
               echo  '$(System.DefaultWorkingDirectory)'
