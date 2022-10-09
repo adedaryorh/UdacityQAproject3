@@ -30,7 +30,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">p3demo-appservice.azurewebsites.net</stringProp>
+          <stringProp name="HTTPSampler.domain">myproject3-appservice.azurewebsites.net</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -49,7 +49,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">p3demo-appservice.azurewebsites.net</stringProp>
+          <stringProp name="HTTPSampler.domain">myproject3-appservice.azurewebsites.net</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -65,7 +65,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">Ids.csv</stringProp>
+            <stringProp name="filename">/Users/Welcome/Desktop/Documents/tutorials/BoschUdacityProjects/Bosch_project3/automatedtesting/jmeter/Ids.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">Id</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -81,7 +81,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">p3demo-appservice.azurewebsites.net</stringProp>
+          <stringProp name="HTTPSampler.domain">myproject3-appservice.azurewebsites.net</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -97,7 +97,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">C:/Users/Shakirat/Desktop/UCL_finaldemo/Project Starter Resources/automatedtesting/jmeter/Ids.csv</stringProp>
+            <stringProp name="filename">/Users/Welcome/Desktop/Documents/tutorials/BoschUdacityProjects/Bosch_project3/automatedtesting/jmeter/Ids.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">Id</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -180,7 +180,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">result_stress.csv</stringProp>
+          <stringProp name="filename">/Users/Welcome/Desktop/Documents/tutorials/BoschUdacityProjects/Bosch_project3/automatedtesting/jmeter/result_stress.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
