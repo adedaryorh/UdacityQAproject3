@@ -83,7 +83,7 @@ stages:
     jobs:
       - job: Build_Artifacts
         displayName: Build Artifacts
-        pool: my_Agent
+        pool: myAgent
         steps:
           - task: ArchiveFiles@2
             displayName: Archive Fakerestapi
@@ -130,7 +130,7 @@ stages:
     jobs:
       - deployment: deploy_fakerestapi
         displayName: Deploy FakeRestAPI
-        pool: my_Agent
+        pool: myAgent
         environment: 'myEnv'
         strategy:
           runOnce:
