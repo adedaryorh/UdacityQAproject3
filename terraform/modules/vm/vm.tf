@@ -16,10 +16,10 @@ resource "azurerm_linux_virtual_machine" "test" {
   location            = "${var.location}"
   resource_group_name = "${var.resource_group}"
   size                = "Standard_B1s"
-  admin_username      = "B_r_i_g_h_t"
+  admin_username      = "BrightVM"
   network_interface_ids = [azurerm_network_interface.test.id,]
   admin_ssh_key {
-    username   = "B_r_i_g_h_t"
+    username   = "BrightVM"
     public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDZdW32VeNz+7T4cRCQXhj43fWmHkD74cXJbStZseB1me3bPxaJrilMtbTSylg5ryDe4jQDkNzKFyvO4qCnJFuv2mY8KggAdSVSZEIdyDbz5qfpfCNyXhpHG6puksSSFQXHF1DECRGVJVH7KLV9dsy0xh9FbHQYyYrflqkUMD3+N5++XMcGyXQqyNxXT4ugykwKlu528GkL2uYQhKwl5c/LMvA25EDs9hdzBdP3InHcwaJEfObkstXwjyXaEh8OLj7s1CcooXtD8aT0F7Il5bRXfMUAownKa22W7sezOf6KGf2QOFla3eHT3TFOgvTZD52QNj6KzquvCbC5JM2ynZL"
     #public_key = file(var.vm_public_key) 
      
