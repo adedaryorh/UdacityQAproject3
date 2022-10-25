@@ -6,7 +6,7 @@
 - 
 
 ### Status badge
-[![Build Status]([https://dev.azure.com/odluser213065/BoschUdacity_project3/_apis/build/status/adedayoas91.BoschUdacity_project3?branchName=main)](https://dev.azure.com/odluser213065/BoschUdacity_project3/_build/latest?definitionId=1&branchName=main](https://dev.azure.com/odluser213065/BoschUdacity_project3/_apis/build/status/adedayoas91.BoschUdacity_project3?branchName=main))
+[![Build Status](https://dev.azure.com/odluser213065/BoschUdacity_project3/_apis/build/status/adedayoas91.BoschUdacity_project3?branchName=main)
 
 ### Introduction
 
