@@ -1,9 +1,9 @@
-subscription_id = "a3a536c2-3690-4c5f-8032-998a8dc3234e"
-client_id = "6dd3f063-4d00-48e2-a23e-d56d6ca8870e"
-client_secret = "2g18Q~gJE6v2L5Nj~xEXKR5cxQZ9syb_mkVefcs_"
+subscription_id = "a785336a-35d8-4efd-80be-93d34a9e4b66"
+client_id = "6b2c250d-1a12-4001-98a0-03731214c840"
+client_secret = "A4A8Q~D3BbKvgdo7bQE1o4bwY0QXOIFYI2NF6dzR"
 tenant_id = "f958e84a-92b8-439f-a62d-4f45996b6d07"
 
-location = "EastUS"
+location = "SouthCentralUS"
 resource_group = "Azuredevops"
 application_type = "myProject3"
 
