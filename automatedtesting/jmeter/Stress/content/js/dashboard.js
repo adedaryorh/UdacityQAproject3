@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.9666666666666667, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "Delete User"], "isController": false}, {"data": [1.0, 500, 1500, "Get User by ID"], "isController": false}, {"data": [0.9, 500, 1500, "Get Users"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.8277777777777777, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "Delete User"], "isController": false}, {"data": [1.0, 500, 1500, "Get User by ID"], "isController": false}, {"data": [0.48333333333333334, 500, 1500, "Get Users"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 90, 0, 0.0, 235.53333333333336, 100, 1408, 105.0, 471.70000000000005, 535.9000000000001, 1408.0, 1.5097124836447815, 0.6905755149797028, 0.22626029540040932], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete User", 30, 0, 0.0, 110.23333333333333, 100, 197, 103.0, 129.8, 163.99999999999994, 197.0, 0.508931752252023, 0.15436933813425618, 0.07663796503638862], "isController": false}, {"data": ["Get User by ID", 30, 0, 0.0, 103.06666666666666, 100, 110, 103.0, 106.9, 109.45, 110.0, 0.508931752252023, 0.15436933813425618, 0.07663796503638862], "isController": false}, {"data": ["Get Users", 30, 0, 0.0, 493.2999999999999, 411, 1408, 441.5, 563.3000000000001, 1047.7499999999995, 1408.0, 0.5049739938393173, 0.3866207140332273, 0.07495707721052366], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 90, 0, 0.0, 415.6333333333334, 128, 1841, 214.5, 823.7, 926.5500000000001, 1841.0, 1.5215296444692397, 0.6959809428412029, 0.22803133083126234], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Delete User", 30, 0, 0.0, 204.0, 129, 428, 197.5, 317.6, 413.15, 428.0, 0.517651930841702, 0.15701434542913345, 0.07795110130448286], "isController": false}, {"data": ["Get User by ID", 30, 0, 0.0, 205.60000000000005, 128, 495, 201.5, 267.9000000000001, 388.29999999999984, 495.0, 0.5167602576911152, 0.15674388285044957, 0.07781682786715816], "isController": false}, {"data": ["Get Users", 30, 0, 0.0, 837.2999999999998, 641, 1841, 801.0, 964.2, 1448.2999999999995, 1841.0, 0.5104558370624969, 0.3908177502509741, 0.07577078831396437], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
