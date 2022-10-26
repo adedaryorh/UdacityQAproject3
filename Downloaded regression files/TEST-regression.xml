@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="regression test" tests="5" time="2.093">
+  <testsuite name="Create Employee" id="426757c3-dfea-4bb9-b6c5-6d3fe3577a08" timestamp="2022-10-26T12:39:06.268Z" tests="1" failures="0" errors="0" time="0.572">
+    <testcase name="Successful response" time="0.572" classname="RegressionTest"/>
+  </testsuite>
+  <testsuite name="Get All Employees" id="cf4f95fe-0645-4807-a986-18ce5e854448" timestamp="2022-10-26T12:39:06.268Z" tests="1" failures="0" errors="0" time="0.377">
+    <testcase name="Successful response" time="0.377" classname="RegressionTest"/>
+  </testsuite>
+  <testsuite name="Get Employee" id="048b3561-ba31-41bd-8bb4-cd97bb284119" timestamp="2022-10-26T12:39:06.268Z" tests="1" failures="0" errors="0" time="0.452">
+    <testcase name="Status code is 200" time="0.452" classname="RegressionTest"/>
+  </testsuite>
+  <testsuite name="Update Employee" id="a12f0587-3605-4d48-b9b9-a8569d6ae13b" timestamp="2022-10-26T12:39:06.268Z" tests="1" failures="0" errors="0" time="0.369">
+    <testcase name="Successful response" time="0.369" classname="RegressionTest"/>
+  </testsuite>
+  <testsuite name="Delete employee" id="70e4d2b0-040a-42e6-a780-80c6512fd498" timestamp="2022-10-26T12:39:06.268Z" tests="1" failures="0" errors="0" time="0.323">
+    <testcase name="Status code is 200" time="0.323" classname="RegressionTest"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="validation" tests="4" time="1.561">
+  <testsuite name="Create Employee validation" id="f6550747-f7fa-4b2d-a1de-d9df3d985146" timestamp="2022-10-26T12:39:10.332Z" tests="3" failures="0" errors="0" time="0.529">
+    <testcase name="Successful response" time="0.529" classname="Validation"/>
+    <testcase name="Status code is 200" time="0.529" classname="Validation"/>
+    <testcase name="Validate Data" time="0.529" classname="Validation"/>
+  </testsuite>
+  <testsuite name="Get All Employees" id="c56b8a40-6b09-46e1-953c-a9d8ad75c631" timestamp="2022-10-26T12:39:10.332Z" tests="2" failures="0" errors="0" time="0.354">
+    <testcase name="Status code is 200" time="0.354" classname="Validation"/>
+    <testcase name="Validate schema" time="0.354" classname="Validation"/>
+  </testsuite>
+  <testsuite name="Update Employee" id="78d0479a-8589-41d2-8251-b1a1b57d1fd4" timestamp="2022-10-26T12:39:10.332Z" tests="2" failures="0" errors="0" time="0.376">
+    <testcase name="Status code is 200" time="0.376" classname="Validation"/>
+    <testcase name="Validate schema" time="0.376" classname="Validation"/>
+  </testsuite>
+  <testsuite name="Delete Employee" id="11005699-a093-4df5-905c-95b5748c265a" timestamp="2022-10-26T12:39:10.332Z" tests="0" failures="0" errors="0" time="0.302"/>
+</testsuites>
