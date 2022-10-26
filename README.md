@@ -229,6 +229,11 @@ Successful completion of this creates the webapp which I have named `myProject3-
 <img width="1440" alt="Screenshot 2022-10-26 at 14 22 30" src="https://user-images.githubusercontent.com/47278559/198092875-abdd71af-6625-4b6b-9637-7ac99236380d.png">
 <img width="1440" alt="Screenshot 2022-10-26 at 14 22 50" src="https://user-images.githubusercontent.com/47278559/198092903-6224cf9d-0035-4b27-a769-65e5c1e8a316.png">
 
+> HTML reports of both the endurance and stress test passed at 100 percent as shown in the following screenshots
+<img width="1440" alt="Screenshot 2022-10-26 at 17 29 05" src="https://user-images.githubusercontent.com/47278559/198098622-b4f8ca4b-93da-4d88-ac84-326a28e31334.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 17 29 35" src="https://user-images.githubusercontent.com/47278559/198098671-b5783b92-97e2-426c-8bb0-57ca5c9e8665.png">
+
+
 5. I then included the test section into the pipeline and the results are as shown below in screenshots. Please refer to the [screenshots folder](https://github.com/adedayoas91/BoschUdacity_project3/tree/main/screenshots) for possible screenshots that are not included here.
 
 <img width="1440" alt="Screenshot 2022-10-26 at 14 35 50" src="https://user-images.githubusercontent.com/47278559/198093470-7321f0c6-ece1-40de-9d05-034c511868cb.png">
@@ -253,7 +258,6 @@ Successful completion of this creates the webapp which I have named `myProject3-
 <img width="1440" alt="Screenshot 2022-10-26 at 14 39 33" src="https://user-images.githubusercontent.com/47278559/198094120-66913d63-6ad0-4beb-bcac-dc01ae1f0dad.png">
 
 
-
 > Also there are screenshots from the Newmann test results
 <img width="1440" alt="Screenshot 2022-10-26 at 14 39 41" src="https://user-images.githubusercontent.com/47278559/198094151-dae89639-f4c7-45b8-8709-ec4380d3e7f4.png">
 <img width="1440" alt="Screenshot 2022-10-26 at 14 39 48" src="https://user-images.githubusercontent.com/47278559/198094182-c117c148-e3b9-4f9f-9404-0b280ddd192c.png">
@@ -261,7 +265,13 @@ Successful completion of this creates the webapp which I have named `myProject3-
 <img width="1440" alt="Screenshot 2022-10-26 at 14 40 02" src="https://user-images.githubusercontent.com/47278559/198094235-c05ece3b-c30b-4c50-9052-ddfb8a42f525.png">
 <img width="1440" alt="Screenshot 2022-10-26 at 14 40 09" src="https://user-images.githubusercontent.com/47278559/198094284-6b194c8f-ff6c-4ccb-9786-d186ce7879aa.png">
 
+#### Also, run test log for the regression and validation are shown in the following screenshots
 
+<img width="1440" alt="Screenshot 2022-10-26 at 14 41 19" src="https://user-images.githubusercontent.com/47278559/198097467-cb915495-03b4-4e55-abdc-5b3f5450e961.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 41 27" src="https://user-images.githubusercontent.com/47278559/198097500-c1797375-4c3b-4c1e-84be-917111bdbde1.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 41 42" src="https://user-images.githubusercontent.com/47278559/198097529-87d0f711-915b-4d7e-b271-13feea5fb280.png">
+
+Note, the downloaded regression and validation files can be found in the [Downloaded regression files](https://github.com/adedayoas91/BoschUdacity_project3/tree/main/Downloaded regression files)
 
 > A request alert was created for the webapp and can be seen as followed in the below screenshots
 
@@ -275,6 +285,10 @@ An email alert received when the appservice encountered a request overload is as
 <img width="1440" alt="Screenshot 2022-10-26 at 17 30 13" src="https://user-images.githubusercontent.com/47278559/198086563-35450941-3de5-40d4-a228-0a969fa560c8.png">
 
 <img width="1440" alt="Screenshot 2022-10-26 at 17 30 32" src="https://user-images.githubusercontent.com/47278559/198086657-a289af38-380a-4a60-96fb-bc3629a24ecd.png">
+
+> Log analytics report is shown below when the query was ran
+<img width="1440" alt="Screenshot 2022-10-26 at 15 51 31" src="https://user-images.githubusercontent.com/47278559/198098270-a4fb51a9-1110-419c-95f6-c8c5ee89331e.png">
+
 
 > The final stage of the pipeline was also completed and all tests were passed as shown below
 
@@ -295,6 +309,7 @@ An email alert received when the appservice encountered a request overload is as
 
 > This is what the final repo looks like after updating the repo in GitHub
 
+<img width="1440" alt="Screenshot 2022-10-26 at 19 47 28" src="https://user-images.githubusercontent.com/47278559/198099354-d8316ca7-d177-42a8-a18f-5f1bc44bf54a.png">
 
 
 ### Resources
