@@ -1,91 +1,91 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1666699410904,966,Get Users,200,OK,stress 1-1,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,966,0,819
-1666699411870,130,Delete User,200,OK,stress 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,130,0,0
-1666699412001,129,Get User by ID,200,OK,stress 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,128,0,0
-1666699412903,1841,Get Users,200,OK,stress 1-2,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1841,0,1145
-1666699414744,134,Delete User,200,OK,stress 1-2,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,134,0,0
-1666699414879,131,Get User by ID,200,OK,stress 1-2,text,true,,310,154,2,2,https://myproject3-appservice.azurewebsites.net/api/Users/4,131,0,0
-1666699414908,681,Get Users,200,OK,stress 1-3,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,681,0,468
-1666699415590,183,Delete User,200,OK,stress 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,183,0,0
-1666699415774,196,Get User by ID,200,OK,stress 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,196,0,0
-1666699416903,1127,Get Users,200,OK,stress 1-4,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1127,0,913
-1666699418031,401,Delete User,200,OK,stress 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,401,0,0
-1666699418433,214,Get User by ID,200,OK,stress 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,214,0,0
-1666699418904,758,Get Users,200,OK,stress 1-5,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,758,0,554
-1666699419662,206,Delete User,200,OK,stress 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,206,0,0
-1666699419870,222,Get User by ID,200,OK,stress 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,222,0,0
-1666699420903,707,Get Users,200,OK,stress 1-6,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,707,0,497
-1666699421610,136,Delete User,200,OK,stress 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,136,0,0
-1666699421746,136,Get User by ID,200,OK,stress 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,136,0,0
-1666699422904,751,Get Users,200,OK,stress 1-7,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,751,0,484
-1666699423656,203,Delete User,200,OK,stress 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,203,0,0
-1666699423859,215,Get User by ID,200,OK,stress 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,215,0,0
-1666699424902,802,Get Users,200,OK,stress 1-8,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,802,0,598
-1666699425704,209,Delete User,200,OK,stress 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,208,0,0
-1666699425913,212,Get User by ID,200,OK,stress 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,212,0,0
-1666699426904,948,Get Users,200,OK,stress 1-9,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,948,0,772
-1666699427853,130,Delete User,200,OK,stress 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,130,0,0
-1666699427984,131,Get User by ID,200,OK,stress 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,131,0,0
-1666699428904,797,Get Users,200,OK,stress 1-10,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,797,0,587
-1666699429702,198,Delete User,200,OK,stress 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,198,0,0
-1666699429901,201,Get User by ID,200,OK,stress 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,201,0,0
-1666699430905,813,Get Users,200,OK,stress 1-11,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,813,0,640
-1666699431718,231,Delete User,200,OK,stress 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,231,0,0
-1666699431950,200,Get User by ID,200,OK,stress 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,200,0,0
-1666699432905,824,Get Users,200,OK,stress 1-12,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,824,0,682
-1666699433729,164,Delete User,200,OK,stress 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,164,0,0
-1666699433893,212,Get User by ID,200,OK,stress 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,212,0,0
-1666699434903,733,Get Users,200,OK,stress 1-13,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,733,0,567
-1666699435637,206,Delete User,200,OK,stress 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,206,0,0
-1666699435843,199,Get User by ID,200,OK,stress 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,199,0,0
-1666699436898,884,Get Users,200,OK,stress 1-14,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,884,0,682
-1666699437782,130,Delete User,200,OK,stress 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,130,0,0
-1666699437912,176,Get User by ID,200,OK,stress 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,176,0,0
-1666699438902,724,Get Users,200,OK,stress 1-15,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,724,0,475
-1666699439627,215,Delete User,200,OK,stress 1-15,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,215,0,0
-1666699439842,202,Get User by ID,200,OK,stress 1-15,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,202,0,0
-1666699440903,813,Get Users,200,OK,stress 1-16,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,813,0,672
-1666699441716,162,Delete User,200,OK,stress 1-16,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,162,0,0
-1666699441878,206,Get User by ID,200,OK,stress 1-16,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,206,0,0
-1666699442901,821,Get Users,200,OK,stress 1-17,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,821,0,622
-1666699443723,218,Delete User,200,OK,stress 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,218,0,0
-1666699443942,186,Get User by ID,200,OK,stress 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,186,0,0
-1666699444898,780,Get Users,200,OK,stress 1-18,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,780,0,584
-1666699445679,195,Delete User,200,OK,stress 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,195,0,0
-1666699445874,206,Get User by ID,200,OK,stress 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,206,0,0
-1666699446915,653,Get Users,200,OK,stress 1-19,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,653,0,523
-1666699447569,147,Delete User,200,OK,stress 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,147,0,0
-1666699447717,210,Get User by ID,200,OK,stress 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,210,0,0
-1666699448906,757,Get Users,200,OK,stress 1-20,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,757,0,481
-1666699449665,428,Delete User,200,OK,stress 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,428,0,0
-1666699450094,495,Get User by ID,200,OK,stress 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,495,0,0
-1666699450901,800,Get Users,200,OK,stress 1-21,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,800,0,654
-1666699451701,224,Delete User,200,OK,stress 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,224,0,0
-1666699451926,198,Get User by ID,200,OK,stress 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,198,0,0
-1666699452904,862,Get Users,200,OK,stress 1-22,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,862,0,657
-1666699453767,136,Delete User,200,OK,stress 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,136,0,0
-1666699453903,162,Get User by ID,200,OK,stress 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,162,0,0
-1666699454904,909,Get Users,200,OK,stress 1-23,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,909,0,613
-1666699455813,305,Delete User,200,OK,stress 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,305,0,0
-1666699456118,199,Get User by ID,200,OK,stress 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,199,0,0
-1666699456904,858,Get Users,200,OK,stress 1-24,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,858,0,663
-1666699457762,197,Delete User,200,OK,stress 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,197,0,0
-1666699457960,204,Get User by ID,200,OK,stress 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,204,0,0
-1666699458904,805,Get Users,200,OK,stress 1-25,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,805,0,601
-1666699459710,195,Delete User,200,OK,stress 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,195,0,0
-1666699459906,301,Get User by ID,200,OK,stress 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,301,0,0
-1666699460905,641,Get Users,200,OK,stress 1-26,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,641,0,465
-1666699461546,129,Delete User,200,OK,stress 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,129,0,0
-1666699461676,272,Get User by ID,200,OK,stress 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,272,0,0
-1666699462904,688,Get Users,200,OK,stress 1-27,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,688,0,478
-1666699463592,319,Delete User,200,OK,stress 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,319,0,0
-1666699463911,188,Get User by ID,200,OK,stress 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,188,0,0
-1666699464905,821,Get Users,200,OK,stress 1-28,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,821,0,637
-1666699465726,227,Delete User,200,OK,stress 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,227,0,0
-1666699465953,128,Get User by ID,200,OK,stress 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,128,0,0
-1666699466903,782,Get Users,200,OK,stress 1-29,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,782,0,578
-1666699467686,213,Delete User,200,OK,stress 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,213,0,0
-1666699467899,206,Get User by ID,200,OK,stress 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,206,0,0
-1666699468902,773,Get Users,200,OK,stress 1-30,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,772,0,630
-1666699469675,149,Delete User,200,OK,stress 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,149,0,0
-1666699469824,231,Get User by ID,200,OK,stress 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,231,0,0
+1666786829249,992,Get Users,200,OK,stress 1-1,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,992,0,685
+1666786830241,205,Delete User,200,OK,stress 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,204,0,0
+1666786830446,204,Get User by ID,200,OK,stress 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,204,0,0
+1666786831243,1044,Get Users,200,OK,stress 1-2,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1044,0,839
+1666786832288,134,Delete User,200,OK,stress 1-2,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,134,0,0
+1666786832422,140,Get User by ID,200,OK,stress 1-2,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,140,0,0
+1666786833245,719,Get Users,200,OK,stress 1-3,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,719,0,578
+1666786833964,138,Delete User,200,OK,stress 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,138,0,0
+1666786834103,129,Get User by ID,200,OK,stress 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,129,0,0
+1666786835242,731,Get Users,200,OK,stress 1-4,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,731,0,526
+1666786835974,204,Delete User,200,OK,stress 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,204,0,0
+1666786836178,205,Get User by ID,200,OK,stress 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,205,0,0
+1666786837248,771,Get Users,200,OK,stress 1-5,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,771,0,519
+1666786838020,218,Delete User,200,OK,stress 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,218,0,0
+1666786838238,191,Get User by ID,200,OK,stress 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,191,0,0
+1666786839259,706,Get Users,200,OK,stress 1-6,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,706,0,500
+1666786839966,203,Delete User,200,OK,stress 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,203,0,0
+1666786840170,213,Get User by ID,200,OK,stress 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,213,0,0
+1666786841242,666,Get Users,200,OK,stress 1-7,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,666,0,462
+1666786841909,226,Delete User,200,OK,stress 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,226,0,0
+1666786842136,184,Get User by ID,200,OK,stress 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,184,0,0
+1666786843248,913,Get Users,200,OK,stress 1-8,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,913,0,687
+1666786844162,204,Delete User,200,OK,stress 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,204,0,0
+1666786844367,203,Get User by ID,200,OK,stress 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,203,0,0
+1666786845242,548,Get Users,200,OK,stress 1-9,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,548,0,408
+1666786845790,209,Delete User,200,OK,stress 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,209,0,0
+1666786846000,204,Get User by ID,200,OK,stress 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,204,0,0
+1666786847255,895,Get Users,200,OK,stress 1-10,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,895,0,690
+1666786848150,203,Delete User,200,OK,stress 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,203,0,0
+1666786848354,204,Get User by ID,200,OK,stress 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,204,0,0
+1666786849242,851,Get Users,200,OK,stress 1-11,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,851,0,646
+1666786850093,205,Delete User,200,OK,stress 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,205,0,0
+1666786850298,204,Get User by ID,200,OK,stress 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,204,0,0
+1666786851243,794,Get Users,200,OK,stress 1-12,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,794,0,589
+1666786852037,204,Delete User,200,OK,stress 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,204,0,0
+1666786852242,204,Get User by ID,200,OK,stress 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,204,0,0
+1666786853241,790,Get Users,200,OK,stress 1-13,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,790,0,647
+1666786854031,130,Delete User,200,OK,stress 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,130,0,0
+1666786854162,126,Get User by ID,200,OK,stress 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,126,0,0
+1666786855245,1102,Get Users,200,OK,stress 1-14,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1102,0,870
+1666786856347,192,Delete User,200,OK,stress 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,192,0,0
+1666786856540,204,Get User by ID,200,OK,stress 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,204,0,0
+1666786857244,3434,Get Users,200,OK,stress 1-15,text,true,,784,152,2,2,https://myproject3-appservice.azurewebsites.net/api/Users,3434,0,2784
+1666786860679,261,Delete User,200,OK,stress 1-15,text,true,,313,155,2,2,https://myproject3-appservice.azurewebsites.net/api/Users/10,261,0,0
+1666786860940,157,Get User by ID,200,OK,stress 1-15,text,true,,313,155,2,2,https://myproject3-appservice.azurewebsites.net/api/Users/10,157,0,0
+1666786859241,1992,Get Users,200,OK,stress 1-16,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1992,0,1856
+1666786861234,134,Delete User,200,OK,stress 1-16,text,true,,310,154,2,2,https://myproject3-appservice.azurewebsites.net/api/Users/2,134,0,0
+1666786861368,133,Get User by ID,200,OK,stress 1-16,text,true,,310,154,2,2,https://myproject3-appservice.azurewebsites.net/api/Users/2,133,0,0
+1666786861245,618,Get Users,200,OK,stress 1-17,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,618,0,414
+1666786861863,136,Delete User,200,OK,stress 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,136,0,0
+1666786862000,170,Get User by ID,200,OK,stress 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,170,0,0
+1666786863244,751,Get Users,200,OK,stress 1-18,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,751,0,602
+1666786863995,222,Delete User,200,OK,stress 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,222,0,0
+1666786864217,205,Get User by ID,200,OK,stress 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,205,0,0
+1666786865244,815,Get Users,200,OK,stress 1-19,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,815,0,508
+1666786866058,213,Delete User,200,OK,stress 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,213,0,0
+1666786866272,168,Get User by ID,200,OK,stress 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,168,0,0
+1666786867248,755,Get Users,200,OK,stress 1-20,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,755,0,551
+1666786868004,201,Delete User,200,OK,stress 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,201,0,0
+1666786868206,204,Get User by ID,200,OK,stress 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,204,0,0
+1666786869244,737,Get Users,200,OK,stress 1-21,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,737,0,599
+1666786869981,134,Delete User,200,OK,stress 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,134,0,0
+1666786870116,136,Get User by ID,200,OK,stress 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,136,0,0
+1666786871243,694,Get Users,200,OK,stress 1-22,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,694,0,547
+1666786871937,129,Delete User,200,OK,stress 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,129,0,0
+1666786872066,233,Get User by ID,200,OK,stress 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,233,0,0
+1666786873241,1004,Get Users,200,OK,stress 1-23,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1004,0,798
+1666786874246,202,Delete User,200,OK,stress 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,202,0,0
+1666786874448,207,Get User by ID,200,OK,stress 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,207,0,0
+1666786875240,643,Get Users,200,OK,stress 1-24,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,643,0,483
+1666786875885,202,Delete User,200,OK,stress 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,202,0,0
+1666786876087,205,Get User by ID,200,OK,stress 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,205,0,0
+1666786877241,792,Get Users,200,OK,stress 1-25,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,792,0,608
+1666786878033,134,Delete User,200,OK,stress 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,134,0,0
+1666786878168,134,Get User by ID,200,OK,stress 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,134,0,0
+1666786879249,693,Get Users,200,OK,stress 1-26,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,693,0,554
+1666786879943,129,Delete User,200,OK,stress 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,129,0,0
+1666786880072,211,Get User by ID,200,OK,stress 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,211,0,0
+1666786881248,789,Get Users,200,OK,stress 1-27,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,789,0,571
+1666786882037,169,Delete User,200,OK,stress 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,169,0,0
+1666786882207,133,Get User by ID,200,OK,stress 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,133,0,0
+1666786883244,662,Get Users,200,OK,stress 1-28,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,662,0,523
+1666786883907,164,Delete User,200,OK,stress 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,164,0,0
+1666786884071,204,Get User by ID,200,OK,stress 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,204,0,0
+1666786885247,766,Get Users,200,OK,stress 1-29,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,766,0,561
+1666786886013,226,Delete User,200,OK,stress 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,226,0,0
+1666786886239,141,Get User by ID,200,OK,stress 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,141,0,0
+1666786887249,607,Get Users,200,OK,stress 1-30,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,607,0,409
+1666786887857,203,Delete User,200,OK,stress 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,203,0,0
+1666786888060,211,Get User by ID,200,OK,stress 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,211,0,0
