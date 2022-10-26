@@ -2,11 +2,8 @@
 
 ## Ensuring Quality Releases using Azure CI/CD Pipeline
 
-### Project objectives
-- 
-
 ### Status badge
-![Build Status](https://dev.azure.com/odluser213065/BoschUdacity_project3/_apis/build/status/adedayoas91.BoschUdacity_project3?branchName=main)](https://dev.azure.com/odluser213065/BoschUdacity_project3/_build/latest?definitionId=1&branchName=main)
+[![Build Status](https://dev.azure.com/odluser213202/BoschUdacity_project3/_apis/build/status/adedayoas91.BoschUdacity_project3?branchName=main)](https://dev.azure.com/odluser213202/BoschUdacity_project3/_build/latest?definitionId=1&branchName=main)
 
 ### Introduction
 
@@ -92,6 +89,7 @@ backendAzureRmKey: 'terraform.tfstate'
 Run `source .azure_envs.sh` to source into your local environment
 
 3. Self-hosted Test Runner and REST API Infrastructure
+
 > Create an SSH key for authentication to a Linux VM in Azure
 To generate a public-private key pair run the following command (no need to provide a passphrase):
 ```
@@ -114,8 +112,10 @@ Create a terraform.tfvars file inside the [test](https://github.com/adedayoas91/
 If everything runs correctly you should be able to see the resources been created. You can also check the creation of the resources in the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) under
 Home > Resource groups > "RESOURCE_GROUP_NAME"
 
-3. Azure DevOps
-Create a new Azure DevOps Project and Service Connections
+4. Azure DevOps
+
+>Create a new Azure DevOps Project and Service Connections
+
 - Login to [Azure DevOps](https://dev.azure.com/) and create a `New Project`
 - Create a new Service Connection via Project settings > Service connections > New service connection. After successful creation, set service principal to automatic via Azure Resource Manager > Service principal (automatic)
 - Select a Resource group, give the connection a name and description and `Save`.
@@ -128,6 +128,7 @@ A detailed explanation of how to create a new Azure DevOps project and service c
 Ensure that the name of the service connections matches the names provided in the `.yaml` file. Also ensure that the webapp name matches the name provided in the `terraform.tfvars` file.
 
 > Add the Self-hosted Test Runner to a Pipelines Environment
+
 - Create a New Environment in Azure Pipelines. From inside your project in Azure DevOps via Pipelines > Environments > New environment
 - Give the environment a name e.g. test, then select Virtual machines > Next. Choose `Linux` from the dropdown and REMEMBER to copy the Registration script
 - From a local terminal connect to the Virtual Machine using the `ssh` key created earlier. The public_IP can be found in the Azure Portal under Home > Resource groups > "RESOURCE_GROUP_NAME" > "Virtual machine"
@@ -135,6 +136,7 @@ Ensure that the name of the service connections matches the names provided in th
 - Once you are logged into the VM paste the Registration script and run it.
 
 > Deploy a Log Analytics Workspace
+
 - Deploy a new log analytics workspace by running the deploy_log_analytics_workspace.sh script. Make sure to set a resource group and provide a workspace name when promoted, e.g. ensuring-quality-releases-log. An example command to do this is as follows
 ```
 cd analytics
@@ -160,6 +162,7 @@ Pipelines > Library > Secure files > + Secure file
 `"SECURE_FILE_NAME" > Authorize for use in all pipelines`
 
 > Creating a new Azure Pipeline
+
 - Move into your project in Azure DevOps and create a new pipeline via Pipelines > Pipelines > Create new pipeline
 - Select your project from GitHub choose `Existing Azure Pipelines YAML file`
 - Select the main branch and select the path to the [azure-pipelines.yaml](https://github.com/adedayoas91/BoschUdacity_project3/blob/main/azure-pipelines.yaml) file.
@@ -168,87 +171,131 @@ Pipelines > Library > Secure files > + Secure file
 
 > The result of the following is shown in the following screenshots.
 
-<img width="1440" alt="Screenshot 2022-10-25 at 13 40 23" src="https://user-images.githubusercontent.com/47278559/197794733-1e12aacd-3851-451d-be80-b813092d730b.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 13 33 34" src="https://user-images.githubusercontent.com/47278559/198081303-44ed9854-717a-41e9-873b-8dc9936fe605.png">
 
-<img width="1440" alt="Screenshot 2022-10-25 at 13 40 48" src="https://user-images.githubusercontent.com/47278559/197794759-3f49ccc2-aa2d-4f60-bb65-a04817c9e76a.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 13 34 52" src="https://user-images.githubusercontent.com/47278559/198081385-fda277b5-ae9e-4e92-8f24-6f52ab400547.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 13 36 14" src="https://user-images.githubusercontent.com/47278559/198081430-ebcd3385-2308-4fd3-b5e9-cab4bcd125a0.png">
+
+Other screenshots from the Provision pipeline can be found in the following in the [screenshots folder](https://github.com/adedayoas91/BoschUdacity_project3/tree/main/screenshots)  
+
+Successful completion of this creates the webapp which I have named `myProject3-Appservice`. A screenshot of successful creation of the webapp both in the Azure portal as well as loading the webapp URL are shown below in that order:
+
+<img width="1440" alt="Screenshot 2022-10-26 at 13 36 51" src="https://user-images.githubusercontent.com/47278559/198081533-98773001-854d-4703-837e-7743710d915d.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 13 37 08" src="https://user-images.githubusercontent.com/47278559/198081587-31ac3d8f-f9be-420f-b346-ea427376490c.png">
+
+> I then added to the pipeline to build and deploy infrastructures as shown below:
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 02 50" src="https://user-images.githubusercontent.com/47278559/198089145-f7495a26-236c-4be9-b104-6425fce19420.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 02 58" src="https://user-images.githubusercontent.com/47278559/198089362-b51e3ef6-e62e-453c-83ac-63904b9d2259.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 06" src="https://user-images.githubusercontent.com/47278559/198089424-1ddd5e57-bb84-4ed5-8d3d-14c4454048c2.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 12" src="https://user-images.githubusercontent.com/47278559/198089487-c2acf02d-88b4-4401-8286-2c9573878673.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 19" src="https://user-images.githubusercontent.com/47278559/198089548-d6c261c3-a8ac-4622-b94b-b987421a483a.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 29" src="https://user-images.githubusercontent.com/47278559/198089651-933bd505-f63a-42ff-9599-31d79db14716.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 36" src="https://user-images.githubusercontent.com/47278559/198090544-9a7977ff-889c-48fd-be0d-cf15d16e2bc1.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 43" src="https://user-images.githubusercontent.com/47278559/198090564-876f411e-54bb-4f6f-bcf8-a78af20f89c8.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 50" src="https://user-images.githubusercontent.com/47278559/198090578-116daf07-581b-4eeb-b8ed-e0e785b61556.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 03 59" src="https://user-images.githubusercontent.com/47278559/198090592-084a91fc-166a-4c0d-9f97-6b0412b79a6f.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 06" src="https://user-images.githubusercontent.com/47278559/198090604-885a4041-b58e-4963-a9e4-34f1b26f82b2.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 13" src="https://user-images.githubusercontent.com/47278559/198090619-07c9c8be-c830-49d7-81bf-98a05632a32c.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 20" src="https://user-images.githubusercontent.com/47278559/198090655-ab8b2475-a719-4bfe-91f3-6e5a0724f18a.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 27" src="https://user-images.githubusercontent.com/47278559/198090676-e3e8a469-3e02-4325-9654-db90ce81b1a7.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 36" src="https://user-images.githubusercontent.com/47278559/198090696-0f5ed4e1-0a9f-456a-aca2-0faa8e222927.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 45" src="https://user-images.githubusercontent.com/47278559/198090713-6929c52a-a62b-444b-a04b-6b5cd62ac3a0.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 52" src="https://user-images.githubusercontent.com/47278559/198090762-10215bc5-2a4a-4ad7-9008-0f179f484a7a.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 04 59" src="https://user-images.githubusercontent.com/47278559/198090780-31d945ba-b741-4472-921e-9b47605c9ba4.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 05 06" src="https://user-images.githubusercontent.com/47278559/198090843-e8aebed8-3bb0-4d2a-960b-c37144fb9efb.png">
+
+> From above, successful `Build` and `Deploy` led to the creation of the Fake RestAPI been deployed in the webapp. I then copied the `Request URL` for use in JMeter testings as shown in the screenshot below 
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 05 48" src="https://user-images.githubusercontent.com/47278559/198084355-5db39729-5e82-4793-9185-304b73686d44.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 06 06" src="https://user-images.githubusercontent.com/47278559/198084406-045b6a88-fc78-4c74-b13a-02f5afcd2469.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 06 28" src="https://user-images.githubusercontent.com/47278559/198084433-2612c977-0143-42c9-b798-1b863bc047d6.png">
+
+> I then go ahead using the `Request URL` copied above and use it for tests in JMeter as shown below:
+- For the endurance test
+<img width="1440" alt="Screenshot 2022-10-26 at 14 12 42" src="https://user-images.githubusercontent.com/47278559/198092184-c9ec2f49-db77-4478-bd1e-06ce9ecfc357.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 15 13" src="https://user-images.githubusercontent.com/47278559/198092261-8b913e6f-58d8-4f4e-b8bc-13dbc9a1855d.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 15 20" src="https://user-images.githubusercontent.com/47278559/198092502-bb2bc484-53d6-4b28-ac26-417d83cca666.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 16 37" src="https://user-images.githubusercontent.com/47278559/198092621-e31107e5-fee4-44ec-8553-aa4380129cb7.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 16 46" src="https://user-images.githubusercontent.com/47278559/198092719-02e4444e-3594-4b10-904a-e4623430a322.png">
+
+- For the stress test
+<img width="1440" alt="Screenshot 2022-10-26 at 14 20 45" src="https://user-images.githubusercontent.com/47278559/198092809-d7c1c91d-e27a-4a84-9af3-05f0bbc7f2bc.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 21 32" src="https://user-images.githubusercontent.com/47278559/198092855-cdfeb2bd-6af9-4af7-94db-a7e562e2f6a7.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 22 30" src="https://user-images.githubusercontent.com/47278559/198092875-abdd71af-6625-4b6b-9637-7ac99236380d.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 22 50" src="https://user-images.githubusercontent.com/47278559/198092903-6224cf9d-0035-4b27-a769-65e5c1e8a316.png">
+
+5. I then included the test section into the pipeline and the results are as shown below in screenshots. Please refer to the [screenshots folder](https://github.com/adedayoas91/BoschUdacity_project3/tree/main/screenshots) for possible screenshots that are not included here.
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 35 50" src="https://user-images.githubusercontent.com/47278559/198093470-7321f0c6-ece1-40de-9d05-034c511868cb.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 35 58" src="https://user-images.githubusercontent.com/47278559/198093501-26e8acd4-fac2-4985-add0-340b3040b9c9.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 06" src="https://user-images.githubusercontent.com/47278559/198093528-19e8ed3c-3243-45d8-8db3-8d0ec29baecb.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 13" src="https://user-images.githubusercontent.com/47278559/198093553-54833a36-afa4-4a5b-b8fb-0a87fecb149c.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 19" src="https://user-images.githubusercontent.com/47278559/198093597-c45931fb-9524-4828-8f0a-22270c12eede.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 27" src="https://user-images.githubusercontent.com/47278559/198093625-beceaef9-41c8-4da7-8b45-4d41ffcc8629.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 35" src="https://user-images.githubusercontent.com/47278559/198093673-989040ed-7f4b-4f28-89aa-88f87a7da6b2.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 42" src="https://user-images.githubusercontent.com/47278559/198093694-a000454f-8e38-458f-96a7-b3407fbadcc4.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 53" src="https://user-images.githubusercontent.com/47278559/198093727-e77eaf50-8812-4829-9bd3-62519c339ef7.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 37 00" src="https://user-images.githubusercontent.com/47278559/198093750-a0b14ec2-067c-4989-904d-b2ac1918bd66.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 37 28" src="https://user-images.githubusercontent.com/47278559/198093785-6f105098-d64c-4177-b233-d6617f884952.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 37 36" src="https://user-images.githubusercontent.com/47278559/198093812-a17f1f4a-6591-4037-b231-cef03e6b0102.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 38 30" src="https://user-images.githubusercontent.com/47278559/198093846-741923be-6c73-4bc8-87f9-be207a02a5c3.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 38 37" src="https://user-images.githubusercontent.com/47278559/198093880-d1651d9d-a32d-455a-981a-261e764d3ddd.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 38 45" src="https://user-images.githubusercontent.com/47278559/198093905-7b6ad0ee-8ad9-44a5-9526-9c1f5cddc32a.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 38 52" src="https://user-images.githubusercontent.com/47278559/198093922-e82b2c81-1e26-4d9f-8381-d8267d34d478.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 03" src="https://user-images.githubusercontent.com/47278559/198093946-25322380-521a-44e4-ab2a-5b3f70d9d5e1.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 11" src="https://user-images.githubusercontent.com/47278559/198094010-3aa364b6-208c-4085-aa78-0525325cd9a2.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 23" src="https://user-images.githubusercontent.com/47278559/198094092-eea9dd34-f9ab-48bf-9018-0fe93f60cda1.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 33" src="https://user-images.githubusercontent.com/47278559/198094120-66913d63-6ad0-4beb-bcac-dc01ae1f0dad.png">
 
 
-> Successful completion of this create the webapp which I have named `myProject3-Appservice`. A screenshot of successful creation of the webapp both in the Azure portal as well as loading the webapp URL are shown below in that order:
-
-<img width="1440" alt="Screenshot 2022-10-25 at 13 41 57" src="https://user-images.githubusercontent.com/47278559/197794920-2edaf276-a64d-4872-81b3-36ef306063c3.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 42 33" src="https://user-images.githubusercontent.com/47278559/197794961-3c5bec65-5f15-4f6d-bf3b-fda349a1b952.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 55" src="https://user-images.githubusercontent.com/47278559/197795076-4a1d9252-e3fd-43a4-9869-b9c5d2de0b64.png">
-
-
-> Copy the `Request URL` shown in the screenshot below to be used for the JMeter stress and endurance tests 
-
-<img width="1440" alt="Screenshot 2022-10-25 at 13 58 11" src="https://user-images.githubusercontent.com/47278559/197795116-4dffd0ac-74c0-49d8-a82d-5759352e1516.png">
-
-<img width="1440" alt="Screenshot 2022-10-25 at 13 58 22" src="https://user-images.githubusercontent.com/47278559/197795164-41116403-5e11-48fb-9cc8-896c174728d0.png">
-
-<img width="1440" alt="Screenshot 2022-10-25 at 13 59 55" src="https://user-images.githubusercontent.com/47278559/197796286-e5e8418d-9999-4ca6-82b7-70ba64b575e6.png">
-
-<img width="1440" alt="Screenshot 2022-10-25 at 14 04 54" src="https://user-images.githubusercontent.com/47278559/197796332-ec87dc19-96ce-40c9-9140-7e39ba497253.png">
-
-<img width="1440" alt="Screenshot 2022-10-25 at 14 04 54" src="https://user-images.githubusercontent.com/47278559/197796654-c1888636-7936-43e9-8852-8b4aec32a20b.png">
-
-<img width="1440" alt="Screenshot 2022-10-25 at 14 06 18" src="https://user-images.githubusercontent.com/47278559/197796723-f3e66686-cc18-4472-a23b-31311f02cf29.png">
-
-
-> Several tests were carried out and below are screenshots of the results from Azure pipelines
-<img width="1440" alt="Screenshot 2022-10-25 at 13 56 36" src="https://user-images.githubusercontent.com/47278559/197795944-a4d71078-3cce-42b3-9fdc-5f344cb76a46.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 56 49" src="https://user-images.githubusercontent.com/47278559/197795969-59bce107-6c59-455f-9758-0d8d6a4cea98.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 56 56" src="https://user-images.githubusercontent.com/47278559/197795998-0b6a09cf-ac0f-45fb-ad7b-b13479c4c6cd.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 05" src="https://user-images.githubusercontent.com/47278559/197796021-4274f782-fd4e-4b6d-a61b-342e54831bc5.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 12" src="https://user-images.githubusercontent.com/47278559/197796068-4e172304-7e68-48a7-8b9c-ef65801f5b3f.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 25" src="https://user-images.githubusercontent.com/47278559/197796108-f2454e0b-a601-48d4-818d-d12ec0be036d.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 32" src="https://user-images.githubusercontent.com/47278559/197796140-ac85aeb6-681f-4b31-b82e-a9658de699c7.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 13 57 46" src="https://user-images.githubusercontent.com/47278559/197796179-7bdbb114-6757-49eb-965f-fbec3a03a555.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 06 36" src="https://user-images.githubusercontent.com/47278559/197796785-ae5ae991-bebb-4db4-bc2b-8561762c746f.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 31 57" src="https://user-images.githubusercontent.com/47278559/197796881-b6ffaa30-b7c3-4d0c-9c7c-213eee1c7f6d.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 32 06" src="https://user-images.githubusercontent.com/47278559/197796926-9a54b8c3-f440-439c-b8ce-21ff3d0ea5df.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 32 18" src="https://user-images.githubusercontent.com/47278559/197796968-25eaf804-9d3e-4c82-b1ff-cc9717c11bae.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 32 26" src="https://user-images.githubusercontent.com/47278559/197797000-f5c67693-1786-4130-b394-3ed3b87cb44e.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 32 33" src="https://user-images.githubusercontent.com/47278559/197797089-2765ebb0-5023-4863-9226-5f1dca0a9d0b.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 06" src="https://user-images.githubusercontent.com/47278559/197797120-8f2eb794-c890-4a43-b72c-dbcfac1c82f0.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 14" src="https://user-images.githubusercontent.com/47278559/197797183-5758085d-5344-4f57-af83-047ca1792c03.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 19" src="https://user-images.githubusercontent.com/47278559/197797213-a590e68b-6a45-424f-b7a6-4dbc7cbbe8c4.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 29" src="https://user-images.githubusercontent.com/47278559/197797254-0375f4b4-c58a-4dab-8684-8ed07d0f4909.png">
 
 > Also there are screenshots from the Newmann test results
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 41" src="https://user-images.githubusercontent.com/47278559/198094151-dae89639-f4c7-45b8-8709-ec4380d3e7f4.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 48" src="https://user-images.githubusercontent.com/47278559/198094182-c117c148-e3b9-4f9f-9404-0b280ddd192c.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 39 55" src="https://user-images.githubusercontent.com/47278559/198094210-c7c15f36-dc4e-44d5-a3bb-97841517afab.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 40 02" src="https://user-images.githubusercontent.com/47278559/198094235-c05ece3b-c30b-4c50-9052-ddfb8a42f525.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 40 09" src="https://user-images.githubusercontent.com/47278559/198094284-6b194c8f-ff6c-4ccb-9786-d186ce7879aa.png">
 
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 38" src="https://user-images.githubusercontent.com/47278559/197797335-e45a5dc5-8bb7-433f-bf64-8d2c9f5dbb3e.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 44" src="https://user-images.githubusercontent.com/47278559/197797379-ed6fe523-662c-44e9-9ba1-174c5f72b559.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 51" src="https://user-images.githubusercontent.com/47278559/197797440-081518a7-4531-485a-8763-9901cc089700.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 33 56" src="https://user-images.githubusercontent.com/47278559/197797490-9a1130a3-8235-41d1-9b37-ba55e8eba84f.png">
 
 
-> In order to monitor the appservice usage, several alerts were created including requests and HTTP404 alerts. Procedures and screenshots from this are shown in screenshots below
-<img width="1440" alt="Screenshot 2022-10-25 at 14 52 16" src="https://user-images.githubusercontent.com/47278559/197802169-b6a9e232-5782-487e-b35a-7a0a78784b00.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 55 30" src="https://user-images.githubusercontent.com/47278559/197802175-747f0c75-c5b8-41c3-adc6-741f1c5b5526.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 55 38" src="https://user-images.githubusercontent.com/47278559/197802199-901e0740-970a-4839-bf46-88f3c5b717dc.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 15 10 19" src="https://user-images.githubusercontent.com/47278559/197802229-7be82d7b-67ab-488b-9b6f-13407b1fb205.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 15 17 21" src="https://user-images.githubusercontent.com/47278559/197802266-4b5bf350-d2bf-46e2-aedb-a8e72edc9a48.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 45 15" src="https://user-images.githubusercontent.com/47278559/197798535-1c99bb68-00ec-43ee-bab6-7b207d62856c.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 15 56 21" src="https://user-images.githubusercontent.com/47278559/197798626-cae98214-e021-4481-b48b-9d401f38a16d.png">
+> A request alert was created for the webapp and can be seen as followed in the below screenshots
 
-> An email alert received when the appservice request crossed the threshold of 2 as well as a welcome message to the alert administrations are attached as follows 
-<img width="1440" alt="Screenshot 2022-10-25 at 15 56 54" src="https://user-images.githubusercontent.com/47278559/197798694-2a8232eb-5c90-4e52-bf75-898688346cce.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 15 57 06" src="https://user-images.githubusercontent.com/47278559/197799053-06646764-6c54-4f93-add4-746413413891.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 15 57 21" src="https://user-images.githubusercontent.com/47278559/197802490-92eaaa49-8b77-4360-a9fa-5a9356edd740.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 58 12" src="https://user-images.githubusercontent.com/47278559/198086423-84bb13c5-0346-4ed7-a18c-35b302bc8a65.png">
 
+<img width="1440" alt="Screenshot 2022-10-26 at 15 03 38" src="https://user-images.githubusercontent.com/47278559/198086453-6b2714c9-c415-410b-8fc5-bf7236880bc5.png">
+
+
+An email alert received when the appservice encountered a request overload is as shown below as well
+
+<img width="1440" alt="Screenshot 2022-10-26 at 17 30 13" src="https://user-images.githubusercontent.com/47278559/198086563-35450941-3de5-40d4-a228-0a969fa560c8.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 17 30 32" src="https://user-images.githubusercontent.com/47278559/198086657-a289af38-380a-4a60-96fb-bc3629a24ecd.png">
 
 > The final stage of the pipeline was also completed and all tests were passed as shown below
 
-<img width="1440" alt="Screenshot 2022-10-25 at 14 34 09" src="https://user-images.githubusercontent.com/47278559/197797580-e7c916de-2376-4369-9d3e-6e90d527c58f.png">
-<img width="1440" alt="Screenshot 2022-10-25 at 14 34 16" src="https://user-images.githubusercontent.com/47278559/197797629-bdd89267-0f62-4d5f-a0d4-7a5a173bbebf.png">
+<img width="1440" alt="Screenshot 2022-10-26 at 14 35 50" src="https://user-images.githubusercontent.com/47278559/198086985-2ede76df-61de-4ecd-b429-3110c91d3b1a.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 36 13" src="https://user-images.githubusercontent.com/47278559/198087046-6cc4948a-89bc-4c1d-8a92-a7106c473cca.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 40 32" src="https://user-images.githubusercontent.com/47278559/198086867-3b757e2e-711c-4ace-8f9c-ad0449103356.png">
+
+<img width="1440" alt="Screenshot 2022-10-26 at 14 42 33" src="https://user-images.githubusercontent.com/47278559/198086805-c2ab4a40-cc5d-4953-9620-aefb17068739.png">
+
+
+### Please find further screenshots for all stages of the pipeline in the [screenshots folder](https://github.com/adedayoas91/BoschUdacity_project3/tree/main/screenshots)
+
+> In the end, I ensured to delete all resources to save cost
+
+<img width="1440" alt="Screenshot 2022-10-26 at 19 25 57" src="https://user-images.githubusercontent.com/47278559/198095000-b7ee3cdc-fc4f-46e3-ba7e-dcfcb834c3a1.png">
 
 > This is what the final repo looks like after updating the repo in GitHub
-<img width="1440" alt="Screenshot 2022-10-25 at 16 27 43" src="https://user-images.githubusercontent.com/47278559/197801184-05bb8169-09ab-44a3-8f59-e80700cbb7e6.png">
 
-## In the end, I ensured to delete all resources to save cost
 
-<img width="1440" alt="Screenshot 2022-10-25 at 16 34 27" src="https://user-images.githubusercontent.com/47278559/197802886-3838025e-5563-4f39-a24f-04f9c99f6e2d.png">
 
 ### Resources
 Helpful resources from Microsoft are listed below
