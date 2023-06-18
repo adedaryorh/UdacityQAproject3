@@ -1,9 +1,15 @@
-# Resource Group
-variable resource_group {}
-variable location {}
+variable "location" {}
+variable "resource_group" {}
 
-#VM
-variable "application_type" {}
-variable "resource_type" {}
+variable "public_ip_address_id" {}
 variable "subnet_id" {}
-variable "public_ip" {}
+
+
+variable "webapp_name" {}
+variable "resource_type" {}
+
+variable "vm_admin_username" {}
+variable "vm_public_key" {}
+
+# Tags
+variable "project" {}
