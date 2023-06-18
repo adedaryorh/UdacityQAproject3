@@ -81,14 +81,14 @@ stages:
               command: 'plan'
               environmentServiceName: 'service-connection-azurerm'
               allowTelemetryCollection: true
-              workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
+              workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
               
         - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
           displayName: Terraform Apply
           inputs:
             command: 'apply'
             environmentServiceName: 'service-connection-azurerm'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environment/test'
             allowTelemetryCollection: true
 
   - stage: Build
