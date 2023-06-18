@@ -1,3 +1,8 @@
 # Resource Group
-variable location {}
-variable "resource_group" {}
+# Resource Group
+variable "location" {
+  default = "eastus"
+}
+variable "resource_group" {
+  default = "UDACITY-rg"
+}
