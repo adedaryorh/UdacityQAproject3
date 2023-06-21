@@ -6,7 +6,7 @@ variable "client_id" {
   default = "d6b86fe7-bc44-476c-878e-1137814d1243"
 }
 variable "client_secret" {
-  default = "hyC8Q~n-0DURhby_nydCrt5s~RFMTQqhqqNaSboX"
+  default = "Uft8Q~yOQID5HUf0edlx-yNTwOqBSbiqPI4tqcd9"
 }
 variable "tenant_id" {
   default = "077803a8-a498-44f2-a067-4aa2d838ad37"
