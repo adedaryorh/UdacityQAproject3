@@ -51,7 +51,7 @@ stages:
             backendType: 'azurerm'
             backendServiceArm: 'service-connection-azurerm'
             backendAzureRmResourceGroupName: 'tfstate'
-            backendAzureRmStorageAccountName: 'tfstate32363'
+            backendAzureRmStorageAccountName: 'tfstate4038'
             backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'terraform.tfstate'
             allowTelemetryCollection: true
@@ -164,7 +164,7 @@ stages:
                   python3 -m pip install --upgrade pip
                   pip3 install selenium
                   # Install Log Analytics agent on Linux computers (only need to run once, comment when installed)
-                  #wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w ${AZURE_LOG_ANALYTICS_ID} -s ${AZURE_LOG_ANALYTICS_PRIMARY_KEY} -d opinsights.azure.com
+                  wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w ${AZURE_LOG_ANALYTICS_ID} -s ${AZURE_LOG_ANALYTICS_PRIMARY_KEY} -d opinsights.azure.com
                 env: 
                   AZURE_LOG_ANALYTICS_ID: $(la_workspace_id)
                   AZURE_LOG_ANALYTICS_PRIMARY_KEY: $(la_primary_key)
