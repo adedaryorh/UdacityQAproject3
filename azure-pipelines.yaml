@@ -218,6 +218,7 @@ stages:
             targetType: 'inline'
             script: |
               #install chromium & selenium
+              pip install -U selenium
               sudo apt-get install -y chromium-browser
               pip3 install selenium
             
