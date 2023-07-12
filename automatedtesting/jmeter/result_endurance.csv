@@ -1,0 +1,91 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1666786264190,840,Get Users,200,OK,endurance 1-1,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,840,0,654
+1666786265032,221,Delete Users,200,OK,endurance 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,221,0,0
+1666786265254,204,Get User by ID,200,OK,endurance 1-1,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,204,0,0
+1666786266087,702,Get Users,200,OK,endurance 1-2,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,702,0,498
+1666786266789,182,Delete Users,200,OK,endurance 1-2,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,182,0,0
+1666786266971,207,Get User by ID,200,OK,endurance 1-2,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,207,0,0
+1666786268083,749,Get Users,200,OK,endurance 1-3,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,749,0,550
+1666786268833,204,Delete Users,200,OK,endurance 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,204,0,0
+1666786269037,136,Get User by ID,200,OK,endurance 1-3,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,136,0,0
+1666786270086,794,Get Users,200,OK,endurance 1-4,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,794,0,538
+1666786270881,135,Delete Users,200,OK,endurance 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,135,0,0
+1666786271016,172,Get User by ID,200,OK,endurance 1-4,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,172,0,0
+1666786272087,948,Get Users,200,OK,endurance 1-5,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,948,0,736
+1666786273036,197,Delete Users,200,OK,endurance 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,197,0,0
+1666786273234,134,Get User by ID,200,OK,endurance 1-5,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,134,0,0
+1666786274106,663,Get Users,200,OK,endurance 1-6,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,663,0,492
+1666786274770,204,Delete Users,200,OK,endurance 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,204,0,0
+1666786274975,132,Get User by ID,200,OK,endurance 1-6,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,132,0,0
+1666786276084,1074,Get Users,200,OK,endurance 1-7,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,1074,0,733
+1666786277159,170,Delete Users,200,OK,endurance 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,170,0,0
+1666786277330,206,Get User by ID,200,OK,endurance 1-7,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,206,0,0
+1666786278084,881,Get Users,200,OK,endurance 1-8,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,881,0,677
+1666786278965,136,Delete Users,200,OK,endurance 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,136,0,0
+1666786279101,133,Get User by ID,200,OK,endurance 1-8,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,133,0,0
+1666786280086,734,Get Users,200,OK,endurance 1-9,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,734,0,516
+1666786280821,190,Delete Users,200,OK,endurance 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,190,0,0
+1666786281012,209,Get User by ID,200,OK,endurance 1-9,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,208,0,0
+1666786282087,971,Get Users,200,OK,endurance 1-10,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,971,0,767
+1666786283059,202,Delete Users,200,OK,endurance 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,202,0,0
+1666786283261,207,Get User by ID,200,OK,endurance 1-10,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,207,0,0
+1666786284086,768,Get Users,200,OK,endurance 1-11,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,768,0,507
+1666786284855,130,Delete Users,200,OK,endurance 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,130,0,0
+1666786284985,222,Get User by ID,200,OK,endurance 1-11,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,222,0,0
+1666786286080,867,Get Users,200,OK,endurance 1-12,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,867,0,663
+1666786286947,205,Delete Users,200,OK,endurance 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,205,0,0
+1666786287152,213,Get User by ID,200,OK,endurance 1-12,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,213,0,0
+1666786288087,729,Get Users,200,OK,endurance 1-13,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,729,0,598
+1666786288816,129,Delete Users,200,OK,endurance 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,128,0,0
+1666786288946,130,Get User by ID,200,OK,endurance 1-13,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,130,0,0
+1666786290083,793,Get Users,200,OK,endurance 1-14,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,793,0,653
+1666786290876,162,Delete Users,200,OK,endurance 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,162,0,0
+1666786291039,210,Get User by ID,200,OK,endurance 1-14,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,209,0,0
+1666786292079,904,Get Users,200,OK,endurance 1-15,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,904,0,602
+1666786292983,194,Delete Users,200,OK,endurance 1-15,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,194,0,0
+1666786293178,221,Get User by ID,200,OK,endurance 1-15,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,220,0,0
+1666786294082,644,Get Users,200,OK,endurance 1-16,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,644,0,437
+1666786294726,205,Delete Users,200,OK,endurance 1-16,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,205,0,0
+1666786294931,138,Get User by ID,200,OK,endurance 1-16,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,138,0,0
+1666786296085,890,Get Users,200,OK,endurance 1-17,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,889,0,687
+1666786296975,131,Delete Users,200,OK,endurance 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,131,0,0
+1666786297106,176,Get User by ID,200,OK,endurance 1-17,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,176,0,0
+1666786298081,845,Get Users,200,OK,endurance 1-18,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,845,0,636
+1666786298926,203,Delete Users,200,OK,endurance 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,203,0,0
+1666786299129,130,Get User by ID,200,OK,endurance 1-18,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,130,0,0
+1666786300083,682,Get Users,200,OK,endurance 1-19,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,682,0,436
+1666786300765,132,Delete Users,200,OK,endurance 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,132,0,0
+1666786300897,131,Get User by ID,200,OK,endurance 1-19,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,131,0,0
+1666786302085,724,Get Users,200,OK,endurance 1-20,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,724,0,495
+1666786302810,203,Delete Users,200,OK,endurance 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,203,0,0
+1666786303013,136,Get User by ID,200,OK,endurance 1-20,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,136,0,0
+1666786304080,776,Get Users,200,OK,endurance 1-21,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,776,0,576
+1666786304857,205,Delete Users,200,OK,endurance 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,205,0,0
+1666786305062,136,Get User by ID,200,OK,endurance 1-21,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,136,0,0
+1666786306079,686,Get Users,200,OK,endurance 1-22,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,686,0,544
+1666786306765,245,Delete Users,200,OK,endurance 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,245,0,0
+1666786307010,208,Get User by ID,200,OK,endurance 1-22,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,208,0,0
+1666786308087,862,Get Users,200,OK,endurance 1-23,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,862,0,666
+1666786308950,307,Delete Users,200,OK,endurance 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,307,0,0
+1666786309258,202,Get User by ID,200,OK,endurance 1-23,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,202,0,0
+1666786310079,612,Get Users,200,OK,endurance 1-24,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,612,0,442
+1666786310691,134,Delete Users,200,OK,endurance 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,134,0,0
+1666786310825,170,Get User by ID,200,OK,endurance 1-24,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,170,0,0
+1666786312083,652,Get Users,200,OK,endurance 1-25,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,652,0,462
+1666786312735,204,Delete Users,200,OK,endurance 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,204,0,0
+1666786312939,129,Get User by ID,200,OK,endurance 1-25,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,129,0,0
+1666786314080,805,Get Users,200,OK,endurance 1-26,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,805,0,557
+1666786314886,130,Delete Users,200,OK,endurance 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,130,0,0
+1666786315016,176,Get User by ID,200,OK,endurance 1-26,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/2,176,0,0
+1666786316078,798,Get Users,200,OK,endurance 1-27,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,798,0,547
+1666786316877,136,Delete Users,200,OK,endurance 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,135,0,0
+1666786317014,138,Get User by ID,200,OK,endurance 1-27,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/4,138,0,0
+1666786318083,793,Get Users,200,OK,endurance 1-28,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,793,0,587
+1666786318877,202,Delete Users,200,OK,endurance 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,202,0,0
+1666786319080,139,Get User by ID,200,OK,endurance 1-28,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/6,139,0,0
+1666786320086,625,Get Users,200,OK,endurance 1-29,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,625,0,489
+1666786320711,141,Delete Users,200,OK,endurance 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,141,0,0
+1666786320852,276,Get User by ID,200,OK,endurance 1-29,text,true,,310,154,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/8,276,0,0
+1666786322087,677,Get Users,200,OK,endurance 1-30,text,true,,784,152,1,1,https://myproject3-appservice.azurewebsites.net/api/Users,677,0,491
+1666786322764,204,Delete Users,200,OK,endurance 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,204,0,0
+1666786322969,204,Get User by ID,200,OK,endurance 1-30,text,true,,313,155,1,1,https://myproject3-appservice.azurewebsites.net/api/Users/10,204,0,0
