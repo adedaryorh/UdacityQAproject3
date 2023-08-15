@@ -1,50 +1,16 @@
-# Ensuring Quality Releases with Azure DevOps
-Building a CI/CD pipeline with Azure DevOps.
+# Ensuring Quality Releases Project
+Demonstrating building a CI/CD pipeline with Azure DevOps
 
-### Status
-[![Build Status](https://dev.azure.com/marcopaspuel/ensuring-quality-releases-azure-devops/_apis/build/status/marcoBrighterAI.ensuring-quality-releases-azure-devops?branchName=main)](https://dev.azure.com/marcopaspuel/ensuring-quality-releases-azure-devops/_build/latest?definitionId=9&branchName=main)
+## Status
 
-### Table of Contents
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Project Dependencies](#project-dependencies)
-- [Getting Started](#getting-started)
-- [Installation & Configuration](#installation---configuration)
-  * [1. Terraform in Azure](#1-terraform-in-azure)
-    + [1.1. Create a Service Principal for Terraform](#11-create-a-service-principal-for-terraform)
-    + [1.2. Configure the storage account and state backend](#12-configure-the-storage-account-and-state-backend)
-  * [2. Self-hosted Test Runner and REST API Infrastructure](#2-self-hosted-test-runner-and-rest-api-infrastructure)
-    + [2.1. Create an SSH key for authentication to a Linux VM in Azure](#21-create-an-ssh-key-for-authentication-to-a-linux-vm-in-azure)
-    + [2.2. Create a tfvars file to configure Terraform Variables](#22-create-a-tfvars-file-to-configure-terraform-variables)
-    + [2.3. Deploy the REST API infrastructure from your local environment with Terraform](#23-deploy-the-rest-api-infrastructure-from-your-local-environment-with-terraform)
-  * [3. Azure DevOps](#3-azure-devops)
-    + [3.1. Create a new Azure DevOps Project and Service Connections](#31-create-a-new-azure-devops-project-and-service-connections)
-    + [3.2. Add the Self-hosted Test Runner to a Pipelines Environment](#32-add-the-self-hosted-test-runner-to-a-pipelines-environment)
-    + [3.3. Deploy a Log Analytics Workspace](#33-deploy-a-log-analytics-workspace)
-    + [3.3. Upload the public SSH key and tfvars to Pipelines Library](#33-upload-the-public-ssh-key-and-tfvars-to-pipelines-library)
-    + [3.4. Create a new Azure Pipeline](#34-create-a-new-azure-pipeline)
-  * [4. Azure Monitor](#4-azure-monitor)
-    + [4.1. Create a new alter for the App Service](#41-create-a-new-alter-for-the-app-service)
-    + [4.2. Create a new action group for the App Service](#42-create-a-new-action-group-for-the-app-service)
-    + [4.3. Add alter details](#43-add-alter-details)
-- [Automated Testing Output](#automated-testing-output)
+[![Badge Image](images/badget.PNG)](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main)
 
 
-### Introduction
+### Introduction 
+In this project, Azure DevOps is used to build a CI/CD pipeline that create and deploy in infrastructure using terraform, Azure App service to host a website - FakeRestAPI.
+The automated test runs on a self-hosted test runner, a Linux Virtual machine is deployed to use to deploy the UI test with selenium, Integration test with postman and a stress test with Jmeter.
 
-This project uses **Azure DevOps** to build a CI/CD pipeline that creates disposable test environments and runs a variety of
-automated tests to ensure quality releases. It uses **Terraform** to deploy the infrastructure, **Azure App Services** to host
-the web application and **Azure Pipelines** to provision, build, deploy and test the project. The automated tests run on a self-hosted
-virtual machine (Linux) and consist of: **UI Tests** with selenium, **Integration Tests** with postman, **Stress Test** and **Endurance
-Test** with jmeter. Additionally, it uses an **Azure Log Analytics** workspace to monitor and provide insight into the application's
-behavior.
-
-![pycharm0](images/0_ensuring_quality_releases_arch.png)
-
-### Prerequisites
-- [Azure Account](https://portal.azure.com) 
-- [Azure Command Line Interface](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-- [Azure DevOps Account](https://dev.azure.com/) 
+![Structure](images/structure.PNG "structure")
 
 ### Project Dependencies
 - [Terraform](https://www.terraform.io/downloads.html)
@@ -53,28 +19,29 @@ behavior.
 - [Python](https://www.python.org/downloads/)
 - [Selenium](https://sites.google.com/a/chromium.org/chromedriver/getting-started)
 
-### Getting Started
+### Prerequisites
+- [Azure Account](https://portal.azure.com) 
+- [Azure Command Line Interface](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Azure DevOps Account](https://dev.azure.com/) 
 
-1. Fork and clone this repository in your local environment
-2. Open the project on your favorite text editor or IDE
-3. Log into the [Azure Portal](https://portal.azure.com)
-4. Log into [Azure DevOps](https://dev.azure.com/)
+### Steps 
+1. Download the Project Starter file.
+2. Open it in your preferred code editor (Using VS Code in my case)
 
-### Installation & Configuration
-#### 1. Terraform in Azure
-##### 1.1. Create a Service Principal for Terraform
-Log into your Azure account
+Login to your Azure account 
+
 ``` bash
 az login 
 ```
-``` bash 
-az account set --subscription="SUBSCRIPTION_ID"
-```
-Create Service Principle
+
+Create service principal or use the one your already have 
+
 ``` bash
 az ad sp create-for-rbac --name ensuring-quality-releases-sp --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
 ```
-This command will output 5 values:
+
+Below command will be generated 
+
 ``` json
 {
   "appId": "00000000-0000-0000-0000-000000000000",
@@ -84,179 +51,105 @@ This command will output 5 values:
   "tenant": "00000000-0000-0000-0000-000000000000"
 }
 ``` 
-Create an `.azure_envs.sh` file inside the project directory and copy the content of the `.azure_envs.sh.template` to the newly created file.
-Change the parameters based on the output of the previous command. These values map to the `.azure_envs.sh` variables like so:
 
-    appId is the ARM_CLIENT_ID
-    password is the ARM_CLIENT_SECRET
-    tenant is the ARM_TENANT_ID
+Create a config.sh file inside terraform directory, Cd inside the terraform directory and run 
 
-##### 1.2. Configure the storage account and state backend
-To [configure the storage account and state backend](https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage)
-run the bash script [config_storage_account.sh](terraform/config_storage_account.sh) providing
-a resource group name, and a desired location. 
-``` bash 
-./terraform/config_storage_account.sh -g "RESOURCE_GROUP_NAME" -l "LOCATION"
+```bash
+bash config.sh
 ```
-This script will output 3 values:
-``` bash 
-storage_account_name: tstate$RANDOM
-container_name: tstate
-access_key: 0000-0000-0000-0000-000000000000
-```
-Replace the `RESOURCE_GROUP_NAME` and `storage_account_name` in the [terraform/environments/test/main.tf](terraform/environments/test/main.tf)
-file and the `access_key` in the `.azure_envs.sh` script.
-```
-terraform {
-    backend "azurerm" {
-        resource_group_name  = "RESOURCE_GROUP_NAME"
-        storage_account_name = "tstate$RANDOM"
-        container_name       = "tstate"
-        key                  = "terraform.tfstate"
-    }
-}
-```
-```
-export ARM_ACCESS_KEY="access_key"
-```
-You will also need to replace this values in the [azure-pipelines.yaml](.devops/pipelines/azure-pipelines.yaml) file.
-```
-backendAzureRmResourceGroupName: "RESOURCE_GROUP_NAME"
-backendAzureRmStorageAccountName: 'tstate$RANDOM'
-backendAzureRmContainerName: 'tstate'
-backendAzureRmKey: 'terraform.tfstate'
-```
-To source this values in your local environment run the following command:
-```
-source .azure_envs.sh
-```
-NOTE: The values set in `.azure_envs.sh` are required to run terraform commands from your local environment.
-There is no need to run this script if terraform runs in Azure Pipelines.
 
-#### 2. Self-hosted Test Runner and REST API Infrastructure
-##### 2.1. Create an SSH key for authentication to a Linux VM in Azure
-To generate a public private key pair run the following command (no need to provide a passphrase):
-``` bash
+Create an azsecret.conf which will contains variables to be uploaded and use our pipeline as group variable 
+
+
+Go to your local terminal and create SSH key that the VM will use to Login, A public key (id_rsa.pub) and A private key (id_rsa) will be created and save.
+
+```bash
 cd ~/.ssh/
+```
+
+```bash
 ssh-keygen -t rsa -b 4096 -f az_eqr_id_rsa
 ```
-Ensure that the keys were created:
-``` bash
-ls -ll | grep az_eqr_id_rsa
+
+#### Azure Pipeline
+### Setting up Azure Pipeline 
+You need to install [terrafrom extention](https://marketplace.visualstudio.com/items?itemName=charleszipp.azure-pipelines-tasks-terraform&targetId=154afa9d-764e-46a6-9ba3-5b67286ed76b&utm_source=vstsproduct&utm_medium=ExtHubManageList)
+
+![terraform from market place](images/azurexp.PNG "Market Place")
+
+Create a new Service Connection in the Project by going to Project Settings -> Service connections -> New service connection -> Azure Resource Manager -> Service Principal (automatics) -> Choose the subscription -> Fill the data from your azurecreds.conf file -> Name the new service connection to Azure Resource Manager
+
+The next step is to upload our azsecret.conf to Azure Devops as a Secure File, to do this we have to navigate to Pipelines -> Library -> Secure Files -> + Secure File -> Upload File. Now the file should be uploaded.
+
+In order for accessing the VM that Terraform creates we will need to also upload to Secure Files a private key. 
+
+![Azure Config and secure file](images/azureconfg.PNG "Azure config")
+
+We will also need a variables group, we will add the following data in a variable group named azsecret.conf
+
+![Azure pipeline variable](images/variable.PNG "Variable")
+
+### Configuring Pipeline Environment
+
+We need to manually register the Virtual Machine for self-test runner in Pipelines -> Environments -> TEST -> Add resource -> Virtual Machines -> Linux. Then copy the registration script and manually ssh into the virtual machine, paste it on the terminal and run it.
+
+```bash
+mkdir azagent;cd azagent;curl -fkSL -o vstsagent.tar.gz https://vstsagentpackage.azureedge.net/agent/2.210.1/vsts-agent-linux-x64-2.210.1.tar.gz;tar -zxvf vstsagent.tar.gz; if [ -x "$(command -v systemctl)" ]; then ./config.sh --environment --environmentname "TEST" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/lawalshakirat66/ --work _work --projectname 'p3_demo' --auth PAT --token xlwqjycl6g5ab32rieorpuwa2ryxmvcp7dzgwri3mdjznz6b7p6a --runasservice; sudo ./svc.sh install; sudo ./svc.sh start; else ./config.sh --environment --environmentname "TEST" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/lawalshakirat66/ --work _work --projectname 'p3_demo' --auth PAT --token xlwqjycl6g5ab32rieorpuwa2ryxmvcp7dzgwri3mdjznz6b7p6a; ./run.sh; fi
 ```
-For additional information of how to create and use SSH keys, click on the links bellow:
-- [Create and manage SSH keys for authentication to a Linux VM in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed)
-- [Creating and Using SSH Keys](https://serversforhackers.com/c/creating-and-using-ssh-keys)
+![Installing azagent](images/SelfrunnerVM.PNG "azagent")
 
-##### 2.2. Create a tfvars file to configure Terraform Variables
-Create a `terraform.tfvars` file inside the [test](terraform/environments/test) directory and copy the content of the [terraform.tfvars.template](terraform/environments/test/terraform.tfvars.template)
-to the newly created file. Change the values based on the outputs of the previous steps.
+After a successful Deploy run, it should look something like this:
 
-- The `subscription_id`, `client_id`, `client_secret`, and `tenant_id` can be found in the `.azure_envs.sh` file. 
-- Set your desired `location` and `resource_group` for the infrastructure. 
-- Ensure that the public key name `vm_public_key` is the same as the one created in step 2.1 of this guide.
+![Installed azagent](images/installedagent.PNG "installed azagent")
 
-##### 2.3. Deploy the REST API infrastructure from your local environment with Terraform
-Run Terraform plan 
-``` bash
-cd terraform/environments/test
+
+### Terrafrom apply
+
+![terraform apply](images/terraformapply.PNG "installed azagent")
+
+### Deployed Webapp
+
+![Terraform deployed webapp](images/deployedwebterraform.PNG " Terraform Deployed webapp")
+
+![Deployed webapp](images/deployedwebapp.PNG "Deployed webapp")
+
+#### Testing 
+
+### Regression test 
+
+![Regression test](images/regtest.PNG "Reg test")
+
+
+### Validation test 
+
+![Validation test](images/valtest.PNG "Val test")
+
+### Publish Test Results
+
+![Reg Result](images/regxml.PNG "Reg result")
+
+![Val Result](images/valxml.PNG "Val result")
+
+### Selenium Test Result
+
+![Selenium Result](images/seleniumtest.PNG "Selenium Result")
+
+### Stages in Azure Pipeline 
+
+![Stages](images/stages.PNG "Stages")
+
+
+#### Creating Log Analytics workspace 
+
+You con create LAW from the portal, once the LAW is created, goto Agents management > Linux server > Log Analytics agent instructions > Download and onboard agent for Linux
+
+SSH into the VM created above (Under test) and install the OSMAgent.
+
+```bash 
+wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 0ca00083-6708-4862-871d-6ba01ed6f0d8 -s p6HsJnyMJOY3sZRGCyNIkwcQo+UkXL9i8GOrf5wDgzM5JSikM5oY+8k2bfI2uejLsyMu3ra5Y7SlrtiUFX/B2Q== -d opinsights.azure.com
 ```
-``` bash
-terraform init
-```
-``` bash
-terraform plan -out solution.plan
-```
-After running the plan you should be able to see all the resources that will be created.
 
-Run Terraform apply to deploy the infrastructure.
-``` bash
-terraform apply "solution.plan"
-```
-
-If everything runs correctly you should be able to see the resources been created. You can also check the creation of 
-the resources in the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) under <br/>
-`Home > Resource groups > "RESOURCE_GROUP_NAME"`
-
-#### 3. Azure DevOps
-##### 3.1. Create a new Azure DevOps Project and Service Connections
-- a) Go to [Azure DevOps](https://dev.azure.com/)
-- b) Click on `New Project`
-- c) Give the project a name, a description and click `Create`
-- d) Create a new Service Connection `Project settings > Service connections > New service connection`
-- e) Inside new service connection select `Azure Resource Manager > Service principal (automatic)`
-- f) Select a Resource group, give the connection a name a description and click `Save`.
-
-IMPORTANT: You will need to create two service connections:
-- `service-connection-terraform` is created using the same resource group that you provided in step 1.2 of this guide.
-- `service-connection-webapp` is created using the resource group that you provided in `terraform.tfvars` file.
-
-A detailed explanation on how to create a new Azure DevOps project and service connection can be found [here](https://www.youtube.com/watch?v=aIvl4NxCWwU&t=253s).
-
-- g) Make sure that the name of the service connections match the names provided in the [azure-pipelines.yaml](.devops/pipelines/azure-pipelines.yaml) file.
-``` 
-serviceConnectionTerraform: 'service-connection-terraform'
-serviceConnectionWebApp: 'service-connection-webapp'
-```
-- f) Make sure that the webAppName matches the name provided in the `terraform.tfvars` file.
-
-##### 3.2. Add the Self-hosted Test Runner to a Pipelines Environment
-- a) Create a New Environment in Azure Pipelines. From inside your project in Azure DevOps go to:<br/>
-`Pipelines > Environments > New environment`
-- b) Give the environment a name e.g. `test`, then select `Virtual machines > Next`.
-- c) From the dropdown select `Lunix` and copy the `Registration script`
-- d) From a local terminal connect to the Virtual Machine.
-Use the ssh key created in step 2.1 of this guide. The public IP can be found in the Azure Portal under
-`Home > Resource groups > "RESOURCE_GROUP_NAME" > "Virtual machine"`
-``` bash
-ssh -o "IdentitiesOnly=yes" -i ~/.ssh/az_eqr_id_rsa marco@PublicIP
-```
-- e) Once you are logged into the VM paste the `Registration script` and run it.
-- f) (optional) Add a tag when promoted.
-
-##### 3.3. Deploy a Log Analytics Workspace
-- a) Deploy a new log analytics workspace
-Run the [deploy_log_analytics_workspace.sh](analytics/deploy_log_analytics_workspace.sh)
-script. Make sure to set a resource group and provide a workspace name when promoted, e.g. `ensuring-quality-releases-log`.
-``` bash
-cd analytics
-./deploy_log_analytics_workspace.sh
-```
-- b) From a local terminal connect to the Virtual Machine as described above.
-- c) Once you are **logged into the VM** run the following commands:
-``` bash
-wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh
-sh onboard_agent.sh -w ${AZURE_LOG_ANALYTICS_ID} -s ${AZURE_LOG_ANALYTICS_PRIMARY_KEY}
-```
-IMPORTANT: The `AZURE_LOG_ANALYTICS_ID` and `AZURE_LOG_ANALYTICS_PRIMARY_KEY` can be found in the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) under: <br/>
-`Home > Resource groups > "RESOURCE_GROUP_NAME" > "Log Analytics workspace" > Agents management` <br/>
-There you will also find the command to `Download and onboard agent for Linux`.
-
-- d) [Collect custom logs with Log Analytics agent in Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/data-sources-custom-logs)
-
-For more information on how to create and install Log Analytic agents click the links bellow:
-- [Create a Log Analytics workspace with Azure CLI 2.0](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace-cli)
-- [Install Log Analytics agent on Linux computers](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agent-linux)
-
-##### 3.3. Upload the public SSH key and tfvars to Pipelines Library
-- a) Add a secure file to Azure Pipelines. From inside your project in Azure DevOps go to:<br/>
-`Pipelines > Library > Secure files > + Secure file`
-- b) Add the **public ssh key** and the **terraform.tfvars** files to the secure files' library.
-- c) Give the pipeline permissions to use the file:<br/>
-`"SECURE_FILE_NAME" > Authorize for use in all pipelines`
-
-##### 3.4. Create a new Azure Pipeline
-- a) From inside your project in Azure DevOps go to:<br/>
-`Pipelines > Pipelines > Create new pipeline`
-- b) Select your project from GitHub
-- c) Select `Existing Azure Pipelines YAML file`
-- d) Select the `main` branch and select the path to the [azure-pipelines.yaml](.devops/pipelines/azure-pipelines.yaml) file.
-- e) Select `Continue` and then `Run pipeline`
-
-If everything goes well you should be able to see the pipeline running throughout the different stages. See images below.
-
-#### 4. Azure Monitor
-##### 4.1. Create a new alter for the App Service
+### Create a new alter for the App Service
 - a) From the [Azure Portal](https://portal.azure.com) go to:<br/>
 `Home > Resource groups > "RESOURCE_GROUP_NAME" > "App Service Name" > Monitoring > Alerts`
 - b) Click on `New alert rule`
@@ -266,27 +159,67 @@ If everything goes well you should be able to see the pipeline running throughou
 - e) Set the `Threshold value` to e.g. `1`. (You will get altered after two consecutive HTTP 404 errors)
 - f) Click `Done`
 
-##### 4.2. Create a new action group for the App Service
+### Create a new action group for the App Service
 - a) In the same page, go to the `Actions` section, click `Add action groups` and then `Create action group`
 - b) Give the action group a name e.g. `http404`
-- c) Add an **Action name** e.g. `HTTP 404` and choose `email` in **Action Type**.
+- c) Add an **Action name** e.g. `HTTP 404` and choose `Email/SMS message/Push/Voice` in **Action Type**.
 - d) Provide your email and then click `OK`
 
-##### 4.3. Add alter details
-- a) In the same page, go to the `Alert rule details` section and add an `Alert rule name` e.g. `HTTP 404 greater than 1`
-- b) Provide a description and select a -Severity`.
-- c) Click `Create alter rule`
+![Alert](images/alert.PNG "Alert") 
+
+### Create AppServiceHTTPLogs
+
+Go to the `App service > Diagnostic Settings > + Add Diagnostic Setting.` Tick `AppServiceHTTPLogs` and Send to Log Analytics Workspace created on step above and `Save`.
+
+Go back to the `App service > App Service Logs` . Turn on Detailed `Error Messages` and `Failed Request Tracing` > `Save`. Restart the app service.
+
+### Setting up Log Analytics 
+
+Set up custom logging, in the log analytics workspace go to `Settings > Custom Logs > Add + > Choose File`. Select the file selenium.log > Next > Next. Put in the following paths as type Linux:
+
+```
+/var/log/selenium/selenium.log
+```
+
+I called it `selenium_CL`, Tick the box Apply below configuration to my Linux machines.
+
+![CL](images/cl.PNG "CL") 
 
 
+Go back to Log Analytics workspace and run below query to see Logs 
 
+```bash
+AppServiceHTTPLogs 
+|where _SubscriptionId contains "d49264d6-43a4-4c49-a3fd-4b74ad940d69"
+| where ScStatus == '404'
+
+```
+
+![APPhttps Logs](images/Apphttplogs.PNG "Http logs") 
+
+
+Go back to the App Service web page and navigate on the links and also generate 404 not found , example:
+
+```bash 
+https://project3demo-appservice.azurewebsites.net/sheeeeee
+
+https://project3demo-appservice.azurewebsites.net/first page
+```
+After the trigger, check the email configured since an alert message will be received. 
+
+
+![Email](images/email.PNG "Email")
+
+### URL Used for the project 
+ Postman: https://dummy.restapiexample.com/api/v1/create
+ Selemium: https://www.saucedemo.com/
+ Jmeter: Delpoyed webapp -  http://project3demo-appservice.azurewebsites.net/ (Bringing down soon)
 
 
 ### Helpful resources from Microsoft
-These are all excellent official documentation examples from Microsoft that explain key components of CI/CD on Azure:
-
+- [Example setup using GitHub](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops#example-setup-using-github)
+- [Environment - virtual machine resource](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops)
+- [Set secret variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?tabs=yaml%2Cbatch&view=azure-devops&preserve-view=true#secret-variables)
 - [Design a CI/CD pipeline using Azure DevOps](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp)
 - [Create a CI/CD pipeline for GitHub repo using Azure DevOps Starter](https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-github)
 - [Create a CI/CD pipeline for Python with Azure DevOps Starter](https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-python?WT.mc_id=udacity_learn-wwl)
-- [Continuous deployment to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github#option-1-use-app-service-kudu-build-server?WT.mc_id=udacity_learn-wwl)
-- [Flask on Azure App Services](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=bash&WT.mc_id=udacity_learn-wwl&pivots=python-framework-flask)
-- [Azure Pipelines for Python](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python?view=azure-devops&WT.mc_id=udacity_learn-wwl)
